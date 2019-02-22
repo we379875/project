@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex shoppingcart" href="#">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>
+                                    SHOPPING CART
+                                    <br><small>3 items $74.00</small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="content" class="mt-3">
+        <div class="container">
+            <section>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="img/banners5.png" alt="" class="position-relative w-100">
+                        <div class="new-collection position-absolute">
+                            <div class="title">FURNITURE DESIGNS IDEAS</div>
+                            <h3><b>New</b><br><span>Collection</span></h3>
+                            <p><small>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus
+                                    inventore</small>
+                            </p>
+                            <p class="money"><b>$ 79.00</b></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 position-relative">
+                        <img src="img/banners6.png" alt="" class="w-100">
+                        <div class="SOFAS-ARMCHAIRS position-absolute">
+                            <div class="title pb-3">SOFAS & ARMCHAIRS</div>
+                            <h3>3 Seater Leather<br> Sofa</h3>
+                            <div class="money">
+                                <p><del>$659.00</del></p>
+                                <b>$ 499.00</b>
+                            </div>
+                            <a href="#">SHOP NOW <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="position-relative ">
+                            <img src="img/banners7.png" alt="" class="w-100">
+                            <div class="ACRYLIC-FABRIC-BEAN-BAG text-right position-absolute">
+                                <h3>ACRYLIC FABRIC<br> BEAN BAG <br><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                                </h3>
+
+                                <div class="prize">
+                                    <p class="money"><b>$ 99.00</b></p>
+                                </div>
+                                <a class="btn btn-primary" href="#" role="button">SHOP NOW</a>
+                            </div>
+                        </div>
+
+
+                        <div class="position-relative">
+                            <img src="img/banners8.png" alt="" class=" w-100 mt-3">
+                            <div class="CHAIR-WITH-ARMRESTS mt-3 position-absolute">
+                                <h3>CHAIR WITH<br> ARMRESTS</h3>
+
+                                <div class="prize">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="far fa-star"></i>
+                                    <p><del>$ 129.00</del></p>
+                                    <p class="money"><b>$ 99.00</b></p>
+                                </div>
+                                <a href="#">HARRY UP! <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="position-relative col-lg-12 col-6">
+                                <img src="img/banners12.png" alt="" class="w-100">
+                                <div class="dining-chairs text-right position-absolute">
+                                    <p class="title">Chairs</p>
+                                    <h3>ZIO DINING<br>CHAIR</h3>
+                                    <a href="#">SHOP NOW <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="position-relative col-lg-12 col-6">
+                                <img src="img/banners14.png" alt="" class="w-100">
+                                <div class="floor-lamp mt-3 text-right position-absolute">
+                                    <p class="title">Accessories / Lighting</p>
+                                    <h3>TOTEM FLOOR<br> LAMP</h3>
+                                    <a href="#">SHOP NOW <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-lg-8 position-relative">
+                        <img src="img/banners13.png" alt="" class="w-100">
+                        <div class="counter-stool position-absolute">
+                            <p class="title">FURNITURE DESIGNS IDEAS</p>
+                            <h3>Upholstered fabric<br><span>Counter stool</span></h3>
+                            <p><small>Consectetur adipisicing elit. Beatae accusamus, optio,<br>repellendus
+                                    inventore</small></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section class="mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">FEATURED</li>
+                        <li class="breadcrumb-item"><a href="#">LATEST</a></li>
+                        <li class="breadcrumb-item"><a href="#">BEST SELLER</a></li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair <br><span class="prize"><i class="fas fa-euro-sign"></i>399.00</span></p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro nostar">
+                            <p>Marvelous Modern 3 Seater <br><span class="prize"><i
+                                        class="fas fa-euro-sign"></i>599.00</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Chair with armrests <br><span class="prize"><i class="fas fa-euro-sign"></i>200.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro nostar">
+                            <p>Bombi Chair <br><span class="prize"><i class="fas fa-euro-sign"></i>399.00</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 position-relative">
+                        <img src="img/banners10.png" alt="" class="w-100">
+                        <div class="position-absolute">
+                            <p class="title">Wall Dekor</p>
+                            <h3>CLOCKs</h3>
+                            <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 position-relative">
+                        <img src="img/banners11.png" alt="" class="w-100">
+                        <div class="position-absolute">
+                                <p class="title">Coffee Tables</p>
+                                <h3>S.O.S BLOCKS</h3>
+                                <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 position-relative">
+                        <img src="img/banners9.png" alt="" class="w-100">
+                        <div class="position-absolute">
+                                <p class="title">Floor Lamps</p>
+                                <h3>ROCKING LAMP</h3>
+                                <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="mt-5">
+                <h2>BEST SELLER</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg col-6">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Puff Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>287.00</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg col-6">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Bombi Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>399.00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-6">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Wood Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>198.00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-6">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Bombi Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>200.00</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-6">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Bombi Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>200.00</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-5">
+                <h2>BRANDS <small>FURNITURE</small></h2>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/brand1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/brand2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/brand3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/brand4.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/brand5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/brand6.png" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                    <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                </div>
+                <!-- <div class="d-flex justify-content-around mt-5">
+                    <img src="img/brand1.png" alt="">
+                    <img src="img/brand2.png" alt="">
+                    <img src="img/brand3.png" alt="">
+                    <img src="img/brand4.png" alt="">
+                    <img src="img/brand5.png" alt="">
+                    <img src="img/brand6.png" alt="">
+                </div> -->
+            </section>
+        </div>
+    </div>
+
+    <div id="footer">
+
+        <section class="mt-5 pb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img src="img/ship.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">FREE SHIPPING</p>
+                            <p class="m-0"><small>Free shipping on all US order</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  d-flex justify-content-center">
+                        <img src="img/support.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">SUPPORT 24/7</p>
+                            <p class="m-0"><small>We support 24 hours a day</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img src="img/gift.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">GIFT CARDS</p>
+                            <p class="m-0"><small>Give perfect gift</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img src="img/pay.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">PAYMENT 100% SECURE</p>
+                            <p class="m-0"><small>Payment 100% secure</small></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="my-0">
+
+                <div class="row justify-content-between mt-5">
+                    <div class="col-lg-3 info">
+                        <img src="img/logo2.png" alt="" class="mb-3">
+                        <p class="mb-2"><small>Exercitation ullamco laboris nisi ut aliquip ex
+                                commodo consequat. Duis aute irure</small> </p>
+                        <p><small><i class="fas fa-map-marker-alt mr-2"></i>Connaugt Road Central Suite 18B, 148
+                                <br><span class="ml-3">New Yankee</span> </small></p>
+                        <p class="mb-0"><small><i class="fas fa-phone mr-2"></i>+1 (555) 333 22 11</small></p>
+                        <p><small><i class="far fa-envelope mr-2"></i>info@schon.chair</small></p>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-between mt-5">
+                        <div>
+                            <h5>Category</h5>
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li>Chairs</li>
+                                </a>
+                                <a href="#">
+                                    <li>Sofas</li>
+                                </a>
+                                <a href="#">
+                                    <li>Living</li>
+                                </a>
+                                <a href="#">
+                                    <li>Bedroom</li>
+                                </a>
+                                <a href="#">
+                                    <li>Tables</li>
+                                </a>
+                                <a href="#">
+                                    <li>New</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5>Information</h5>
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li>About Us</li>
+                                </a>
+                                <a href="#">
+                                    <li>Contact Us</li>
+                                </a>
+                                <a href="#">
+                                    <li>Teams & Conditions</li>
+                                </a>
+                                <a href="#">
+                                    <li>Privacy Policy</li>
+                                </a>
+                                <a href="#">
+                                    <li>Customer Service</li>
+                                </a>
+                                <a href="#">
+                                    <li>FAQs</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Account</h5>
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li>My account</li>
+                                </a>
+                                <a href="#">
+                                    <li>Order Tracking</li>
+                                </a>
+                                <a href="#">
+                                    <li>Wish List</li>
+                                </a>
+                                <a href="#">
+                                    <li>Shopping Cart</li>
+                                </a>
+                                <a href="#">
+                                    <li>Checkout</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right">
+                        <h5>Sing Up Newsletter</h5>
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Your e-mail"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                        <p class="pt-5 follow">Follow Us</p>
+                        <ul class="d-flex list-unstyled justify-content-end social-media">
+                            <li><a href="#"><i class="fab fa-twitter mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end py-3">
+                <p><i class="far fa-copyright"></i><img src="img/logo3.png" alt=""><span>-All rights Reserve</span></p>
+                <ul class="d-flex list-unstyled payment">
+                    <li><i class="fab fa-cc-visa mr-2"></i></li>
+                    <li><i class="fab fa-cc-paypal mr-2"></i></li>
+                    <li><i class="fab fa-cc-mastercard mr-2"></i></li>
+                    <li><i class="fab fa-cc-discover mr-2"></i></li>
+                    <li><i class="fab fa-amazon"></i></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 5,
+            spaceBetween: 50,
+            // init: false,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

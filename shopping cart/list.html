@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-light mx-5">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto mr-">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
+                        <a class="nav-link" href="#"><i class="fas fa-list-ul"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="content">
+        <div class="banner text-center py-5 mb-5">
+            <h2>CHAIRS</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Products</li>
+                    <li class="breadcrumb-item active" aria-current="page">Chairs</li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-4 sidebar">
+                    <div class="filter">
+                        <h3>FILTER</h3>
+                        <p>Filter by Brands</p>
+                        <div class="form">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Casali">
+                                <label class="form-check-label d-flex" for="Casali">
+                                    Casali <span class="ml-auto">2</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Decar">
+                                <label class="form-check-label d-flex" for="Decar">
+                                    Decar <span class="ml-auto">12</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Fantini">
+                                <label class="form-check-label d-flex" for="Fantini">
+                                    Fantini <span class="ml-auto">4</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Flamentstyle">
+                                <label class="form-check-label d-flex" for="Flamentstyle">
+                                    Flamentstyle <span class="ml-auto">4</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Heerenhuis">
+                                <label class="form-check-label d-flex" for="Heerenhuis">
+                                    Heerenhuis <span class="ml-auto">6</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Hoffmann">
+                                <label class="form-check-label d-flex" for="Hoffmann">
+                                    Hoffmann <span class="ml-auto">10</span>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="Itatlfloor">
+                                <label class="form-check-label d-flex" for="Itatlfloor">
+                                    Itatlfloor <span class="ml-auto">3</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="slider">
+                            <p>Filter by Price</p>
+
+                            <div id="slider-range"></div>
+                            <div class="d-flex mt-3">
+                                <p>
+                                    <label for="amount" class="mr-2">Price</label>
+                                    <input type="text" id="amount" readonly
+                                        style="border:0; color:#f6931f; font-weight:bold;">
+                                </p>
+                                <a class="btn btn-dark" href="#" role="button">Filter</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="category mt-4">
+                        <h3>category</h3>
+                        <ul class="list-group list-group-flush mt-3">
+                            <li class="list-group-item"><a href="#" class="d-flex">CHAIRS <span
+                                        class="ml-auto">12</span></a></li>
+                            <li class="list-group-item"><a href="#" class="d-flex">SOFAS <span
+                                        class="ml-auto">24</span></a></li>
+                            <li class="list-group-item"><a href="#" class="d-flex">ARMCHAIRS <span
+                                        class="ml-auto">9</span></a></li>
+                            <li class="list-group-item"><a href="#" class="d-flex">BEDROOM <span
+                                        class="ml-auto">2</span></a></li>
+                            <li class="list-group-item"><a href="#" class="d-flex">LIGHTING <span
+                                        class="ml-auto">17</span></a></li>
+                            <li class="list-group-item"><a href="#" class="d-flex">KITCHEN <span
+                                        class="ml-auto">10</span></a></li>
+                            <li class="list-group-item"><a href="#" class="d-flex">ACCESSORIES <span
+                                        class="ml-auto">23</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hot mt-5">
+                        <h3 class="mb-4">HOT SALE</h3>
+                        <div class="row">
+                            <div class="col-3"><img src="https://fakeimg.pl/79x79/" alt="" class="w-100"></div>
+                            <div class="col-9">
+                                <p>Egon Wooden Chair</p>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i>
+                                <div class="d-flex align-items-end">
+                                    <p><del>$75,00</del></p>
+                                    <p class="prize pl-2">$55,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3"><img src="https://fakeimg.pl/79x79/" alt="" class="w-100"></div>
+                            <div class="col-9">
+                                <p>Oyo Cantilever Chair</p>
+                                <div class="d-flex align-items-end mt-4">
+                                    <p><del>$75,00</del></p>
+                                    <p class="prize pl-2">$55,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3"><img src="https://fakeimg.pl/79x79/" alt="" class="w-100"></div>
+                            <div class="col-9">
+                                <p>Kurve Chair</p>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i>
+                                <div class="d-flex align-items-end">
+                                    <p><del>$75,00</del></p>
+                                    <p class="prize pl-2">$55,00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-3"><img src="https://fakeimg.pl/79x79/" alt="" class="w-100"></div>
+                            <div class="col-9">
+                                <p class="lh">Marvelous Wooden <br>Chair</p>
+                                <div class="d-flex align-items-end mt-2">
+                                    <p><del>$75,00</del></p>
+                                    <p class="prize pl-2">$55,00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-sm-8 content">
+                    <div class="d-flex justify-content-between title">
+                        <div>
+                            <p>Showing <b>1-9</b> of <b>65</b> results</p>
+                            <p>View 9/18/27/All</p>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#" class="mr-2">Default Sorting</a>
+                            <a href="#" class="mr-2"><i class="fas fa-th-large"></i></a>
+                            <a href="#"><i class="fas fa-list-ul"></i></a>
+                        </div>
+                    </div>
+                    <div class="row mt-3 product">
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                        <div class="col-4 my-3">
+                            <img src="https://fakeimg.pl/275x275/" alt="" class="w-100">
+                            <p>Bombi Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>399,00</p>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center mt-5">
+                            <li class="page-item mr-2"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item mr-2"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item mr-2"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <section class="mt-5 pb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img src="img/ship.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">FREE SHIPPING</p>
+                            <p class="m-0"><small>Free shipping on all US order</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  d-flex justify-content-center">
+                        <img src="img/support.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">SUPPORT 24/7</p>
+                            <p class="m-0"><small>We support 24 hours a day</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img src="img/gift.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">GIFT CARDS</p>
+                            <p class="m-0"><small>Give perfect gift</small></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <img src="img/pay.png" alt="" class="mr-3">
+                        <div>
+                            <p class="m-0">PAYMENT 100% SECURE</p>
+                            <p class="m-0"><small>Payment 100% secure</small></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="my-0">
+
+                <div class="row justify-content-between mt-5">
+                    <div class="col-lg-3 info">
+                        <img src="img/logo2.png" alt="" class="mb-3">
+                        <p class="mb-2"><small>Exercitation ullamco laboris nisi ut aliquip ex
+                                commodo consequat. Duis aute irure</small> </p>
+                        <p><small><i class="fas fa-map-marker-alt mr-2"></i>Connaugt Road Central Suite 18B, 148
+                                <br><span class="ml-3">New Yankee</span> </small></p>
+                        <p class="mb-0"><small><i class="fas fa-phone mr-2"></i>+1 (555) 333 22 11</small></p>
+                        <p><small><i class="far fa-envelope mr-2"></i>info@schon.chair</small></p>
+                    </div>
+                    <div class="col-lg-5 d-flex justify-content-between">
+                        <div>
+                            <h5>Category</h5>
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li>Chairs</li>
+                                </a>
+                                <a href="#">
+                                    <li>Sofas</li>
+                                </a>
+                                <a href="#">
+                                    <li>Living</li>
+                                </a>
+                                <a href="#">
+                                    <li>Bedroom</li>
+                                </a>
+                                <a href="#">
+                                    <li>Tables</li>
+                                </a>
+                                <a href="#">
+                                    <li>New</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h5>Information</h5>
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li>About Us</li>
+                                </a>
+                                <a href="#">
+                                    <li>Contact Us</li>
+                                </a>
+                                <a href="#">
+                                    <li>Teams & Conditions</li>
+                                </a>
+                                <a href="#">
+                                    <li>Privacy Policy</li>
+                                </a>
+                                <a href="#">
+                                    <li>Customer Service</li>
+                                </a>
+                                <a href="#">
+                                    <li>FAQs</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Account</h5>
+                            <ul class="list-unstyled">
+                                <a href="#">
+                                    <li>My account</li>
+                                </a>
+                                <a href="#">
+                                    <li>Order Tracking</li>
+                                </a>
+                                <a href="#">
+                                    <li>Wish List</li>
+                                </a>
+                                <a href="#">
+                                    <li>Shopping Cart</li>
+                                </a>
+                                <a href="#">
+                                    <li>Checkout</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-right">
+                        <h5>Sing Up Newsletter</h5>
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Your e-mail"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                        <p class="pt-5 follow">Follow Us</p>
+                        <ul class="d-flex list-unstyled justify-content-end social-media">
+                            <li><a href="#"><i class="fab fa-twitter mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube mr-2"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end py-3">
+                <p><i class="far fa-copyright"></i><img src="img/logo3.png" alt=""><span>-All rights Reserve</span></p>
+                <ul class="d-flex list-unstyled payment">
+                    <li><i class="fab fa-cc-visa mr-2"></i></li>
+                    <li><i class="fab fa-cc-paypal mr-2"></i></li>
+                    <li><i class="fab fa-cc-mastercard mr-2"></i></li>
+                    <li><i class="fab fa-cc-discover mr-2"></i></li>
+                    <li><i class="fab fa-amazon"></i></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>
