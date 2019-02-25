@@ -34,6 +34,10 @@
     .menu{
         color: #6c757d;
         font-size: 1.5em;
+        display: none;
+        @media (max-width: 767.98px) {
+            display: block;
+        }
     }
     .banner {
         background: #f4f4f4;
@@ -156,6 +160,7 @@
             overflow:scroll;
             position: absolute;
             top: 0;
+            background: #efefef;
         }
     }
     .fullWidth {
@@ -258,6 +263,9 @@
         }
         .article {
             line-height: 1.5em;
+        }
+        .reply{
+            padding-left: 10%;
         }
     }
     .leaveComment {

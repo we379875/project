@@ -1,6 +1,16 @@
+#header .header {
+  background: #282828; }
+  #header .header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #9a9a9b;
+    font-size: 0.85em;
+    padding: 10px 10px; }
+  #header .header a:hover {
+    background: #3f3e43; }
+
 #header .navbar-light .navbar-nav .nav-link {
-  color: #313131;
-  margin-right: 6px; }
+  color: #313131; }
 
 #header .navbar-light .navbar-nav .nav-link:hover {
   color: #aaa; }
@@ -49,7 +59,8 @@
     font-size: 2em; }
   #content section:nth-child(1) .new-collection .title {
     width: 50%;
-    white-space: nowrap; }
+    white-space: nowrap;
+    background: #535353; }
   #content section:nth-child(1) .new-collection .money {
     font-size: 1.5rem; }
   @media (max-width: 991.98px) {
@@ -62,8 +73,14 @@
       font-size: 2em; }
     #content section:nth-child(1) .new-collection p {
       font-size: .85em; } }
+  @media (max-width: 575.98px) {
+    #content section:nth-child(1) .new-collection h3 {
+      font-size: 1.75em; }
+    #content section:nth-child(1) .new-collection p {
+      font-size: .75em; } }
 
 #content section:nth-child(1) .SOFAS-ARMCHAIRS {
+  width: 100%;
   color: white;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -74,9 +91,11 @@
   #content section:nth-child(1) .SOFAS-ARMCHAIRS .title {
     color: #bebebe; }
   #content section:nth-child(1) .SOFAS-ARMCHAIRS .money {
-    margin-left: 60%;
+    display: inline-block;
+    position: relative;
+    left: 30%;
     margin-top: 50%;
-    margin-bottom: 80%;
+    margin-bottom: 15%;
     display: block;
     width: 115.2px;
     padding: 40px 0;
@@ -91,8 +110,9 @@
     #content section:nth-child(1) .SOFAS-ARMCHAIRS .money del {
       font-size: 0.8rem; }
   #content section:nth-child(1) .SOFAS-ARMCHAIRS a {
-    color: white;
-    bottom: 0; }
+    display: block;
+    position: relative;
+    color: white; }
   #content section:nth-child(1) .SOFAS-ARMCHAIRS .fa-chevron-right {
     font-size: .8em;
     text-align: center;
@@ -102,10 +122,25 @@
     border-radius: 12px;
     margin-left: 5px; }
   @media (max-width: 991.98px) {
-    #content section:nth-child(1) .SOFAS-ARMCHAIRS h3 {
-      font-size: 2em; }
-    #content section:nth-child(1) .SOFAS-ARMCHAIRS p {
-      font-size: 1.25em; } }
+    #content section:nth-child(1) .SOFAS-ARMCHAIRS {
+      width: 80%; }
+      #content section:nth-child(1) .SOFAS-ARMCHAIRS h3 {
+        font-size: 3em; }
+      #content section:nth-child(1) .SOFAS-ARMCHAIRS .money {
+        display: inline-block;
+        margin: 0;
+        margin-top: 50%;
+        margin-bottom: 50%;
+        width: 257px;
+        padding: 100px 0;
+        border-radius: 200px;
+        line-height: 1em; }
+        #content section:nth-child(1) .SOFAS-ARMCHAIRS .money b {
+          font-size: 2.5rem; }
+        #content section:nth-child(1) .SOFAS-ARMCHAIRS .money del {
+          font-size: 1.5rem; }
+      #content section:nth-child(1) .SOFAS-ARMCHAIRS a {
+        font-size: 2em; } }
   @media (max-width: 767.98px) {
     #content section:nth-child(1) .SOFAS-ARMCHAIRS .title {
       font-size: .85em; }
@@ -113,14 +148,21 @@
       font-size: 1.25em; }
     #content section:nth-child(1) .SOFAS-ARMCHAIRS .money {
       margin-top: 30%;
+      line-height: 0;
       margin-left: 25%;
-      padding: 35px 0;
-      width: 105.2px; } }
+      padding: 50px 0;
+      width: 116px; }
+      #content section:nth-child(1) .SOFAS-ARMCHAIRS .money b {
+        font-size: 1em; }
+      #content section:nth-child(1) .SOFAS-ARMCHAIRS .money del {
+        font-size: 0.85em; }
+    #content section:nth-child(1) .SOFAS-ARMCHAIRS a {
+      font-size: 1.25em; } }
 
 #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG {
+  width: 100%;
   padding: 5%;
-  top: 0;
-  left: 25%; }
+  top: 0; }
   #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG h3 {
     font-size: 1.25em;
     color: #aeaeae; }
@@ -139,24 +181,35 @@
     margin-bottom: 10px; }
   @media (max-width: 991.98px) {
     #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG h3 {
-      font-size: 1.75em; }
+      font-size: 3em; }
+    #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG .rating {
+      font-size: 2em; }
     #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG p {
-      font-size: 1.25em; } }
+      font-size: 1.25em; }
+    #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG .money {
+      margin-top: 60%;
+      font-size: 2em; }
+    #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG .btn {
+      margin-top: 10px;
+      padding: .175rem .575rem;
+      font-size: 1.25rem; } }
   @media (max-width: 767.98px) {
     #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG h3 {
-      font-size: 1em; }
+      font-size: 1.5em; }
     #content section:nth-child(1) .ACRYLIC-FABRIC-BEAN-BAG .money {
-      margin-top: 0; } }
+      margin-top: 30%; } }
 
 #content section:nth-child(1) .CHAIR-WITH-ARMRESTS {
+  width: 100%;
   top: 0;
   padding: 5%; }
   #content section:nth-child(1) .CHAIR-WITH-ARMRESTS h3 {
     font-size: 1.25em;
     color: #2c3e66; }
-  #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize {
-    line-height: 6px;
+  #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .rating {
     margin-top: 42px; }
+  #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize {
+    line-height: 6px; }
     #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize del {
       color: #9f9f9f; }
     #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize .money {
@@ -170,89 +223,89 @@
     border: 1px solid #2c3e65; }
   @media (max-width: 991.98px) {
     #content section:nth-child(1) .CHAIR-WITH-ARMRESTS h3 {
-      font-size: 1.75em; }
-    #content section:nth-child(1) .CHAIR-WITH-ARMRESTS p {
+      font-size: 3em; }
+    #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .rating {
+      font-size: 2em;
+      margin-top: 50%; }
+    #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize {
+      padding: 1.25px;
+      line-height: 6px; }
+      #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize del {
+        font-size: 1.5em;
+        color: #9f9f9f; }
+      #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize .money {
+        color: #566686;
+        font-size: 2em; }
+    #content section:nth-child(1) .CHAIR-WITH-ARMRESTS a {
       font-size: 1.25em; } }
   @media (max-width: 767.98px) {
     #content section:nth-child(1) .CHAIR-WITH-ARMRESTS h3 {
-      font-size: 1em; }
+      font-size: 1.5em; }
+    #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .rating {
+      font-size: 2em;
+      margin-top: 23%; }
     #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize {
-      line-height: 3px;
+      line-height: 10px;
       margin-top: 0; }
       #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize del {
-        font-size: 0.75em; }
+        font-size: 1em; }
       #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize .money {
-        font-size: 1em; } }
+        font-size: 1.5em; } }
 
-#content section:nth-child(1) .dining-chairs {
+#content section:nth-child(1) .dining-chairs, #content section:nth-child(1) .floor-lamp {
   top: 15%;
   right: 10%;
   color: #fff; }
-  #content section:nth-child(1) .dining-chairs .title {
+  #content section:nth-child(1) .dining-chairs .title, #content section:nth-child(1) .floor-lamp .title {
     font-size: .75em;
     letter-spacing: 4px;
-    margin-bottom: 0; }
-  #content section:nth-child(1) .dining-chairs h3 {
+    margin-bottom: 0;
+    font-weight: 600; }
+  #content section:nth-child(1) .dining-chairs h3, #content section:nth-child(1) .floor-lamp h3 {
     font-size: 1.25em;
     letter-spacing: 2px;
-    padding-bottom: 40px; }
-  #content section:nth-child(1) .dining-chairs a {
+    padding-bottom: 40px;
+    font-weight: 800; }
+  #content section:nth-child(1) .dining-chairs a, #content section:nth-child(1) .floor-lamp a {
     color: #fff;
     font-weight: 500;
     font-size: 0.75em; }
-  #content section:nth-child(1) .dining-chairs .fa-chevron-right {
+  #content section:nth-child(1) .dining-chairs .fa-chevron-right, #content section:nth-child(1) .floor-lamp .fa-chevron-right {
     background: #b1de89;
     color: #fff;
     border: 1px solid #fff; }
   @media (max-width: 991.98px) {
-    #content section:nth-child(1) .dining-chairs {
+    #content section:nth-child(1) .dining-chairs, #content section:nth-child(1) .floor-lamp {
+      width: 100%;
       top: 5%; }
-      #content section:nth-child(1) .dining-chairs h3 {
-        font-size: 1.75em;
-        padding-bottom: .5em; }
-      #content section:nth-child(1) .dining-chairs p {
-        font-size: 1.25em; } }
+      #content section:nth-child(1) .dining-chairs .title, #content section:nth-child(1) .floor-lamp .title {
+        font-size: 1.75em; }
+      #content section:nth-child(1) .dining-chairs h3, #content section:nth-child(1) .floor-lamp h3 {
+        font-size: 3em;
+        padding-bottom: 25%; }
+      #content section:nth-child(1) .dining-chairs a, #content section:nth-child(1) .floor-lamp a {
+        font-size: 1.5em; } }
   @media (max-width: 767.98px) {
-    #content section:nth-child(1) .dining-chairs {
-      top: 0; }
-      #content section:nth-child(1) .dining-chairs h3 {
-        font-size: 1em;
-        padding-bottom: 0; } }
+    #content section:nth-child(1) .dining-chairs, #content section:nth-child(1) .floor-lamp {
+      top: 10px; }
+      #content section:nth-child(1) .dining-chairs .title, #content section:nth-child(1) .floor-lamp .title {
+        font-size: 1em; }
+      #content section:nth-child(1) .dining-chairs h3, #content section:nth-child(1) .floor-lamp h3 {
+        font-size: 1.25em;
+        padding-bottom: 20%; }
+      #content section:nth-child(1) .dining-chairs a, #content section:nth-child(1) .floor-lamp a {
+        font-size: 1em; } }
 
 #content section:nth-child(1) .floor-lamp {
-  top: 10%;
-  right: 10%;
   color: #535353; }
   #content section:nth-child(1) .floor-lamp .title {
-    font-size: 0.75em;
-    color: #d1d1d1;
-    letter-spacing: 4px;
-    margin-bottom: 0; }
-  #content section:nth-child(1) .floor-lamp h3 {
-    font-size: 1.25em;
-    letter-spacing: 2px;
-    padding-bottom: 100px; }
+    color: #d1d1d1; }
   #content section:nth-child(1) .floor-lamp a {
-    color: #979797;
-    font-weight: 500;
-    font-size: 0.75em; }
+    color: #979797; }
   #content section:nth-child(1) .floor-lamp .fa-chevron-right {
     color: #979797;
-    border: 1px solid #979797; }
-  @media (max-width: 991.98px) {
-    #content section:nth-child(1) .floor-lamp {
-      top: 5%; }
-      #content section:nth-child(1) .floor-lamp h3 {
-        font-size: 1.75em;
-        padding-bottom: .5em; }
-      #content section:nth-child(1) .floor-lamp p {
-        font-size: 1.25em; } }
-  @media (max-width: 767.98px) {
-    #content section:nth-child(1) .floor-lamp {
-      top: 0; }
-      #content section:nth-child(1) .floor-lamp h3 {
-        font-size: 1em;
-        padding-bottom: 0; } }
+    border: 1px solid #979797;
+    background: none; }
 
 #content section:nth-child(1) .counter-stool {
   top: 10%;
@@ -278,9 +331,29 @@
     margin-top: 173px; }
   #content section:nth-child(1) .counter-stool .dark {
     border: 1.25px solid #b5b5b5; }
+  @media (max-width: 991.98px) {
+    #content section:nth-child(1) .counter-stool {
+      top: 5%; }
+      #content section:nth-child(1) .counter-stool .title {
+        font-size: 1.75em; }
+      #content section:nth-child(1) .counter-stool h3 {
+        font-size: 3em;
+        padding-bottom: 25%; }
+      #content section:nth-child(1) .counter-stool p {
+        font-size: 1.5em; } }
   @media (max-width: 767.98px) {
     #content section:nth-child(1) .counter-stool {
-      left: 10%; } }
+      left: 10%; }
+      #content section:nth-child(1) .counter-stool .title {
+        font-size: 1em; }
+      #content section:nth-child(1) .counter-stool h3 {
+        font-size: 1.25em;
+        padding-bottom: 25%; }
+      #content section:nth-child(1) .counter-stool p {
+        font-size: 1em; } }
+  @media (max-width: 380px) {
+    #content section:nth-child(1) .counter-stool h3 {
+      padding-bottom: 10%; } }
 
 #content section:nth-child(2) nav {
   font-weight: 600; }
@@ -348,6 +421,13 @@
       font-size: 3em; }
     #content section:nth-child(2) .col-lg-4 .title {
       font-size: 1.25em; }
+    #content section:nth-child(2) .col-lg-4 a {
+      font-size: 1em; } }
+  @media (max-width: 767.98px) {
+    #content section:nth-child(2) .col-lg-4 h3 {
+      font-size: 1.25em; }
+    #content section:nth-child(2) .col-lg-4 .title {
+      font-size: 1em; }
     #content section:nth-child(2) .col-lg-4 a {
       font-size: 1em; } }
 
@@ -426,6 +506,25 @@
     #content section:nth-child(2) .contact {
       padding: 0 5%; } }
 
+#content section:nth-child(2) .owl-dots {
+  display: none; }
+
+#content section:nth-child(2) .owl-theme .owl-nav [class*=owl-] {
+  background: #eee; }
+
+#content section:nth-child(2) .owl-nav {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: inline-block;
+  background: #eeeeee;
+  border-radius: 20px; }
+  #content section:nth-child(2) .owl-nav span {
+    background: #fff;
+    padding: 1.22px 10px;
+    border-radius: 20px;
+    color: #aaa; }
+
 #content section:nth-child(3) .col .intro {
   line-height: 24px;
   font-size: 0.75em;
@@ -436,15 +535,31 @@
   #content section:nth-child(3) .col .intro .prize {
     color: #343434; }
 
+#content section:nth-child(3) .owl-dots {
+  display: none; }
+
+#content section:nth-child(3) .owl-theme .owl-nav [class*=owl-] {
+  background: #eee; }
+
+#content section:nth-child(3) .owl-nav {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: inline-block;
+  background: #eeeeee;
+  border-radius: 20px; }
+  #content section:nth-child(3) .owl-nav span {
+    background: #fff;
+    padding: 1.22px 10px;
+    border-radius: 20px;
+    color: #aaa; }
+
 #content section:nth-child(4) h2 {
   color: #3a3a3a; }
   #content section:nth-child(4) h2 small {
     color: #a0a0a0;
     font-size: 0.5em;
     letter-spacing: 2px; }
-
-#content section:nth-child(4) .swiper-button-next, #content section:nth-child(4) .swiper-button-prev {
-  background-image: none; }
 
 #content .banner {
   background: #f4f4f4; }
@@ -494,20 +609,6 @@
 
 #content .about section:nth-child(2) small {
   letter-spacing: 1px; }
-
-#content .carousel-indicators {
-  bottom: -30px; }
-  #content .carousel-indicators li {
-    background-color: #ececec; }
-  #content .carousel-indicators .active {
-    background-color: #b6b6b6; }
-
-@media (max-width: 991.98px) {
-  #content .carousel-inner img {
-    width: 100%; }
-  #content .carousel-inner .d-flex img {
-    width: 50%;
-    margin-top: 15px; } }
 
 #footer section:nth-child(1) {
   background: #f6f6f6; }

@@ -25,7 +25,11 @@
 
 #content .menu {
   color: #6c757d;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  display: none; }
+  @media (max-width: 767.98px) {
+    #content .menu {
+      display: block; } }
 
 #content .banner {
   background: #f4f4f4; }
@@ -116,7 +120,8 @@
       height: 300px;
       overflow: scroll;
       position: absolute;
-      top: 0; } }
+      top: 0;
+      background: #efefef; } }
 
 #content .fullWidth {
   background: #eee;
@@ -201,6 +206,9 @@
 
 #content .comments .article {
   line-height: 1.5em; }
+
+#content .comments .reply {
+  padding-left: 10%; }
 
 #content .leaveComment .form-control {
   background: #f7f7f7;

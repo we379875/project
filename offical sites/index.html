@@ -12,42 +12,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/all.css">
-
-    <style>
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-        }
-    </style>
 
 </head>
 
 <body>
     <div id="header">
+        <div class="header">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="contact">
+                        <a href="tel:+(055)3332211" class="mr-3"><i class="fas fa-phone"></i> tel:+(055)333 22 11</a>
+                        <a href="mailto:info@schon.chair"><i class="fas fa-envelope"></i> info@schon.chailr</a>
+                    </div>
+                    <div class="user">
+                        <a href="#">Order Track</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -57,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
@@ -66,13 +56,13 @@
                             <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="about.html">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="../blog/blog-postlist-sidebar.html">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
 
                         <li class="nav-item">
@@ -97,19 +87,19 @@
         <div class="container">
             <section>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <img src="img/banners5.png" alt="" class="position-relative w-100">
+                    <div class="col-lg-6 position-relative">
+                        <div><img src="https://fakeimg.pl/540x540/4c4c4c/4c4c4c/" alt="" class="w-100"></div>
                         <div class="new-collection position-absolute">
                             <div class="title">FURNITURE DESIGNS IDEAS</div>
                             <h3><b>New</b><br><span>Collection</span></h3>
-                            <p><small>Consectetur adipisicing elit. Beatae accusamus, optio, repellendus
+                            <p><small>Consectetur adipisicing elit. Beatae accusamus, optio,<br>repellendus
                                     inventore</small>
                             </p>
                             <p class="money"><b>$ 79.00</b></p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6 position-relative">
-                        <img src="img/banners6.png" alt="" class="w-100">
+                    <div class="col-lg-3 position-relative mt-3  mt-lg-0">
+                        <img src="https://fakeimg.pl/255x540/4c4c4c/4c4c4c/" alt="" class="w-100">
                         <div class="SOFAS-ARMCHAIRS position-absolute">
                             <div class="title pb-3">SOFAS & ARMCHAIRS</div>
                             <h3>3 Seater Leather<br> Sofa</h3>
@@ -120,13 +110,13 @@
                             <a href="#">SHOP NOW <i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6">
-                        <div class="position-relative ">
-                            <img src="img/banners7.png" alt="" class="w-100">
+                    <div class="col-lg-3 mt-3  mt-lg-0">
+                        <div class="position-relative">
+                            <div><img src="https://fakeimg.pl/255x275/f8f8f8/f8f8f8/" alt="" class="w-100"></div>
                             <div class="ACRYLIC-FABRIC-BEAN-BAG text-right position-absolute">
-                                <h3>ACRYLIC FABRIC<br> BEAN BAG <br><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-                                </h3>
+                                <h3>ACRYLIC FABRIC<br> BEAN BAG</h3>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="far fa-star"></i></div>
 
                                 <div class="prize">
                                     <p class="money"><b>$ 99.00</b></p>
@@ -136,14 +126,13 @@
                         </div>
 
 
-                        <div class="position-relative">
-                            <img src="img/banners8.png" alt="" class=" w-100 mt-3">
-                            <div class="CHAIR-WITH-ARMRESTS mt-3 position-absolute">
+                        <div class="position-relative mt-3">
+                            <div><img src="https://fakeimg.pl/255x249/f8f8f8/f8f8f8/" alt="" class=" w-100"></div>
+                            <div class="CHAIR-WITH-ARMRESTS mt-3  mt-lg-0 position-absolute">
                                 <h3>CHAIR WITH<br> ARMRESTS</h3>
-
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="far fa-star"></i></div>
                                 <div class="prize">
-                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="far fa-star"></i>
                                     <p><del>$ 129.00</del></p>
                                     <p class="money"><b>$ 99.00</b></p>
                                 </div>
@@ -157,19 +146,23 @@
                 <div class="row mt-3">
                     <div class="col-lg-4">
                         <div class="row">
-                            <div class="position-relative col-lg-12 col-6">
-                                <img src="img/banners12.png" alt="" class="w-100">
+                            <div class="position-relative col-lg-12">
+                                <div>
+                                    <img src="https://fakeimg.pl/350x223/d0e9b0/d0e9b0/" alt="" class="w-100">
+                                </div>
                                 <div class="dining-chairs text-right position-absolute">
                                     <p class="title">Chairs</p>
-                                    <h3>ZIO DINING<br>CHAIR</h3>
+                                    <h3>ZIO DINING CHAIR</h3>
                                     <a href="#">SHOP NOW <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
-                            <div class="position-relative col-lg-12 col-6">
-                                <img src="img/banners14.png" alt="" class="w-100">
+                            <div class="position-relative col-lg-12 mt-3">
+                                <div>
+                                    <img src="https://fakeimg.pl/350x261/f8f8f8/f8f8f8/" alt="" class="w-100">
+                                </div>
                                 <div class="floor-lamp mt-3 text-right position-absolute">
                                     <p class="title">Accessories / Lighting</p>
-                                    <h3>TOTEM FLOOR<br> LAMP</h3>
+                                    <h3>TOTEM FLOOR LAMP</h3>
                                     <a href="#">SHOP NOW <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
@@ -178,8 +171,8 @@
 
 
                     </div>
-                    <div class="col-lg-8 position-relative">
-                        <img src="img/banners13.png" alt="" class="w-100">
+                    <div class="col-lg-8 position-relative mt-3  mt-lg-0">
+                        <img src="https://fakeimg.pl/730x500/f8f8f8/f8f8f8/" alt="" class="w-100">
                         <div class="counter-stool position-absolute">
                             <p class="title">FURNITURE DESIGNS IDEAS</p>
                             <h3>Upholstered fabric<br><span>Counter stool</span></h3>
@@ -190,9 +183,6 @@
                 </div>
             </section>
 
-
-
-
             <section class="mt-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -202,24 +192,23 @@
                     </ol>
                 </nav>
 
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+                <div class="owl-carousel owl-theme featured position-relative">
+                    <div class="item">
                         <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
                         <div class="intro">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                 class="far fa-star"></i>
                             <p>Bombi Chair <br><span class="prize"><i class="fas fa-euro-sign"></i>399.00</span></p>
                         </div>
-
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="item">
                         <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
                         <div class="intro nostar">
                             <p>Marvelous Modern 3 Seater <br><span class="prize"><i
                                         class="fas fa-euro-sign"></i>599.00</span></p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="item">
                         <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
                         <div class="intro">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
@@ -228,18 +217,47 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="item">
                         <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
                         <div class="intro nostar">
                             <p>Bombi Chair <br><span class="prize"><i class="fas fa-euro-sign"></i>399.00</span></p>
                         </div>
-
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Bombi Chair <br><span class="prize"><i class="fas fa-euro-sign"></i>399.00</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro nostar">
+                            <p>Marvelous Modern 3 Seater <br><span class="prize"><i
+                                        class="fas fa-euro-sign"></i>599.00</span></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i>
+                            <p>Chair with armrests <br><span class="prize"><i class="fas fa-euro-sign"></i>200.00</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/255x255/" alt="" class="w-100">
+                        <div class="intro nostar">
+                            <p>Bombi Chair <br><span class="prize"><i class="fas fa-euro-sign"></i>399.00</span></p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row mx-0">
                     <div class="col-lg-4 position-relative">
-                        <img src="img/banners10.png" alt="" class="w-100">
+                        <img src="https://fakeimg.pl/400x210/f8f8f8/f8f8f8/" alt="" class="w-100">
                         <div class="position-absolute">
                             <p class="title">Wall Dekor</p>
                             <h3>CLOCKs</h3>
@@ -248,20 +266,20 @@
                     </div>
 
                     <div class="col-lg-4 position-relative">
-                        <img src="img/banners11.png" alt="" class="w-100">
+                        <img src="https://fakeimg.pl/400x210/f1f1f1/f1f1f1/" alt="" class="w-100">
                         <div class="position-absolute">
-                                <p class="title">Coffee Tables</p>
-                                <h3>S.O.S BLOCKS</h3>
-                                <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
+                            <p class="title">Coffee Tables</p>
+                            <h3>S.O.S BLOCKS</h3>
+                            <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
 
                     <div class="col-lg-4 position-relative">
-                        <img src="img/banners9.png" alt="" class="w-100">
+                        <img src="https://fakeimg.pl/400x210/f8f8f8/f8f8f8/" alt="" class="w-100">
                         <div class="position-absolute">
-                                <p class="title">Floor Lamps</p>
-                                <h3>ROCKING LAMP</h3>
-                                <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
+                            <p class="title">Floor Lamps</p>
+                            <h3>ROCKING LAMP</h3>
+                            <a href="#">VIEW<i class="fas fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -270,37 +288,71 @@
 
             <section class="mt-5">
                 <h2>BEST SELLER</h2>
-                <div class="row justify-content-center">
-                    <div class="col-lg col-6">
+                <div class="owl-carousel owl-theme best">
+                    <div class="item">
                         <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
                         <div class="intro">
                             <p class="item">Puff Chair</p>
                             <p><i class="fas fa-euro-sign"></i>287.00</p>
                         </div>
-
                     </div>
-                    <div class="col-lg col-6">
+                    <div class="item">
                         <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
                         <div class="intro">
                             <p class="item">Bombi Chair</p>
                             <p class="prize"><i class="fas fa-euro-sign"></i>399.00</p>
                         </div>
                     </div>
-                    <div class="col-lg col-6">
+                    <div class="item">
                         <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
                         <div class="intro">
                             <p class="item">Wood Chair</p>
                             <p class="prize"><i class="fas fa-euro-sign"></i>198.00</p>
                         </div>
                     </div>
-                    <div class="col-lg col-6">
+                    <div class="item">
                         <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
                         <div class="intro">
                             <p class="item">Bombi Chair</p>
                             <p class="prize"><i class="fas fa-euro-sign"></i>200.00</p>
                         </div>
                     </div>
-                    <div class="col-lg col-6">
+                    <div class="item">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Bombi Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>200.00</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Puff Chair</p>
+                            <p><i class="fas fa-euro-sign"></i>287.00</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Bombi Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>399.00</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Wood Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>198.00</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
+                        <div class="intro">
+                            <p class="item">Bombi Chair</p>
+                            <p class="prize"><i class="fas fa-euro-sign"></i>200.00</p>
+                        </div>
+                    </div>
+                    <div class="item">
                         <img src="https://fakeimg.pl/198x198/" alt="" class="w-100">
                         <div class="intro">
                             <p class="item">Bombi Chair</p>
@@ -312,27 +364,14 @@
 
             <section class="mt-5">
                 <h2>BRANDS <small>FURNITURE</small></h2>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/brand1.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/brand2.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/brand3.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/brand4.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/brand5.png" alt=""></div>
-                        <div class="swiper-slide"><img src="img/brand6.png" alt=""></div>
-                    </div>
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
-                    <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="owl-carousel brand mt-5">
+                    <div class="mr-lg-5"><img src="img/brand1.png" alt=""></div>
+                    <div class="mr-lg-5"><img src="img/brand2.png" alt=""></div>
+                    <div class="mr-lg-5"><img src="img/brand3.png" alt=""></div>
+                    <div class="mr-lg-5"><img src="img/brand4.png" alt=""></div>
+                    <div class="mr-lg-5"><img src="img/brand5.png" alt=""></div>
+                    <div><img src="img/brand6.png" alt=""></div>
                 </div>
-                <!-- <div class="d-flex justify-content-around mt-5">
-                    <img src="img/brand1.png" alt="">
-                    <img src="img/brand2.png" alt="">
-                    <img src="img/brand3.png" alt="">
-                    <img src="img/brand4.png" alt="">
-                    <img src="img/brand5.png" alt="">
-                    <img src="img/brand6.png" alt="">
-                </div> -->
             </section>
         </div>
     </div>
@@ -506,41 +545,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script src="js/swiper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/all.js"></script>
 
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 5,
-            spaceBetween: 50,
-            // init: false,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                }
-            }
-        });
-    </script>
 </body>
 
 </html>

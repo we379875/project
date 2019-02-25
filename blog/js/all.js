@@ -5,8 +5,4 @@ $(document).ready(function () {
         $('.sidebar').toggle();
         event.stopPropagation();
     });
-
-    $('body').click(function (e) { 
-        $('.sidebar').hide();
-    });
 });
