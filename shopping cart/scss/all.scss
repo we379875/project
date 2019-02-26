@@ -32,7 +32,7 @@
 
 #content {
     .fa-star {
-        color: #c8a760;
+        color: #e6c376;
         font-size: 0.5em;
         margin-bottom: 10px;
     }
@@ -50,13 +50,61 @@
                 content: ">";
             }
             a {
-                color: #6c757d;
+                color: #b6b6b6;
             }
         }
         .search {
             a {
                 color: #c2c2c2;
                 font-size: 0.75em;
+            }
+        }
+        .product-pic{
+            .img{
+                width: 88%;
+            }
+            p{
+                color: #b6b6b6;
+            }
+            .owl-dots{
+                display: none;
+            }
+        }
+        .product-detail{
+            nav{
+                font-size: 0.85em;
+                font-weight: 600;
+                li{
+                    color: #b6b6b6;
+                }
+                .breadcrumb-item::before{
+                    color: #b6b6b6;
+                }
+            }
+            h3{
+                color: #212121;
+                font-size: 2em;
+                font-weight: 400;
+                letter-spacing: .25em;
+            }
+            p{
+                font-size: 0.75em;
+                color: #b6b6b6;
+                font-weight: 600;
+            }
+            .artical{
+                p{
+                    font-weight: normal;
+                    font-size: 1em;
+                }
+            }
+            .prize{
+                font-size: 2em;
+                color: #212121;
+                span{
+                    color: #b6b6b6;
+                    font-size: .75em;
+                }
             }
         }
     }
@@ -188,6 +236,26 @@
             color: #f6f6f6;
         }
 
+    }
+    .describe{
+        .nav{
+            border-bottom: 1px solid #b6b6b6;
+            a{
+                color: #b6b6b6;
+                font-weight: 700;
+                padding: 10px 0px;
+                margin: 0px 30px;
+            }
+            .active{
+                color: #000;
+                border-bottom: 3px solid #000;
+            }
+        }
+        p{
+            font-size: .9em;
+            color: #b6b6b6;
+            line-height: 1.75em;
+        }
     }
 }
 

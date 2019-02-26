@@ -15,4 +15,28 @@ $(function () {
         " - $" + $("#slider-range").slider("values", 1));
 });
 
-
+$(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        merge:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false,
+                mergeFit:true
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:false,
+                mergeFit:false
+            }
+        }
+    })
+});

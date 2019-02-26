@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/all.css">
 
 </head>
@@ -23,6 +24,7 @@
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="logo">
             </a>
+            <p>+1 (555) 333 22 11</p>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +32,8 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto mr-">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../offical sites/index.html">HOME <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
@@ -39,20 +42,19 @@
                         <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="../offical sites/about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="../blog/blog-postlist-sidebar.html">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="../offical sites/contact.html">CONTACT</a>
                     </li>
 
                     <li class="nav-item d-flex">
                         <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                         <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
                         <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
-                        <a class="nav-link" href="#"><i class="fas fa-list-ul"></i></a>
                     </li>
                 </ul>
             </div>
@@ -63,27 +65,42 @@
         <div class="banner py-5 mb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100">
-
-                        <div class="swiper-container mt-4">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="https://fakeimg.pl/105x105/ffffff/" alt=""
-                                        class="w-100"></div>
-                                <div class="swiper-slide"><img src="https://fakeimg.pl/105x105/ffffff/" alt=""
-                                        class="w-100"></div>
-                                <div class="swiper-slide"><img src="https://fakeimg.pl/105x105/ffffff/" alt=""
-                                        class="w-100"></div>
-                                <div class="swiper-slide"><img src="https://fakeimg.pl/105x105/ffffff/" alt=""
-                                        class="w-100"></div>
-                            </div>
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                    <div class="col-lg-6 product-pic">
+                        <div class="d-flex mb-5">
+                            <p class="pr-2"><i class="fas fa-heart"></i> 27</p>
+                            <p class="pr-2"><i class="fas fa-comments"></i> 12</p>
+                            <p><i class="fas fa-share-alt"></i> 14</p>
                         </div>
+                        <div class="img mx-auto">
+                            <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
+
+                            <div class="owl-carousel owl-theme mt-3">
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                                <div class="item">
+                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 product-detail mx-auto">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Chairs</a></li>
@@ -91,29 +108,35 @@
                             </ol>
                         </nav>
                         <h3>KAILA FABRIC CHAIR</h3>
-                        <p>Reviews(12)</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i> Reviews (12)</p>
                         <div class="d-flex">
-                            <p><i class="fas fa-share-alt"></i>SHARE</p>
-                            <p><i class="fas fa-exchange-alt"></i>COMPARE</p>
-                            <p><i class="fas fa-heart"></i>ADD TO WISHLIST</p>
+                            <p class="pr-3"><i class="fas fa-share-alt"></i> SHARE</p>
+                            <p class="pr-3"><i class="fas fa-exchange-alt"></i> COMPARE</p>
+                            <p><i class="fas fa-heart"></i> ADD TO WISHLIST</p>
                         </div>
-                        <hr>
-                        <p>Koila is a chair designed for restaurants and food lovers in general. Designed in
-                            collaboration
-                            with restaurant professionals, it ensures comfort and an ideal posture, as there are
-                            armrests on
-                            both sides of the chair. </p>
-                        <p>Koila is a seat designed for restaurants and gastronomic places in general. Designed in
-                            collaboration with professional of restaurants and hotels field, this armchair is composed
-                            of a
-                            curved shell with a base in oak who has pinched the back upholstered in fabric or leather.
-                            It
-                            provides comfort and holds for ideal sitting position,the arms may rest on the sides ofthe
-                            armchair. </p>
+                        <hr class="my-4">
+                        <div class="artical">
+                            <p>
+                                Koila is a chair designed for restaurants and food lovers in <br>
+                                general. Designed in collaboration with restaurant professionals, <br>
+                                it ensures comfort and an ideal posture, as there are armrests on <br>
+                                both sides of the chair. 
+                            </p>
+                            <p>
+                                Koila is a seat designed for restaurants and gastronomic places <br>
+                                in general. Designed in collaboration with professional of <br>
+                                restaurants and hotels field, this armchair is composed of a <br>
+                                curved shell with a base in oak who has pinched the back <br>
+                                upholstered in fabric or leather. It provides comfort and holds for <br>
+                                ideal sitting position,the arms may rest on the sides ofthe <br>
+                                armchair. 
+                            </p>
+                        </div>
 
-                        <hr>
+                        <hr class="mt-4">
 
-                        <p class="prize">$ 79.00 <del>399.00</del></p>
+                        <p class="prize">$ 79.00 <span><del>399.00</del></span></p>
 
                     </div>
                 </div>
@@ -122,33 +145,66 @@
         </div>
 
         <div class="container">
+            <div class="describe">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">DESCRIPTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INFORMATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">REVIEWS (12)</a>
+                    </li>
+                </ul>
+
+                <div class="my-5">
+                    <p>
+                        Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration with
+                        restaurant professionals, it ensures comfort and an <br>
+                        ideal posture, as there are armrests on both sides of the chair.
+                    </p>
+                    <p>
+                        Koila is a seat designed for restaurants and gastronomic places in general. Designed in
+                        collaboration with professional of restaurants and hotels field,<br>
+                        this armchair is composed of a curved shell with a base in oak who has pinched the back upholstered in fabric or leather. It
+                        provides comfort and holds <br>
+                        for ideal sitting position,the arms may rest on the sides of the armchair. <br>
+                        Solid oak construction. <br>
+                        Back in plywood (2 faces oak veneer) or upholstered in fabric, leather or eco-leather. <br>
+                        Seat upholstered in fabric, leather or eco-leather. <br> 
+                        H 830 x L 585 x P 540 mm.
+                    </p>
+                </div>
+            </div>
+
             <div class="related">
                 <h3>RELATED PRODUCTS</h3>
                 <div class="row">
                     <div class="col-lg">
                         <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
                         <p>Puff Chairs</p>
-                        <p>287,00</p>
+                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
                     </div>
                     <div class="col-lg">
                         <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
                         <p>Puff Chairs</p>
-                        <p>287,00</p>
+                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
                     </div>
                     <div class="col-lg">
                         <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
                         <p>Puff Chairs</p>
-                        <p>287,00</p>
+                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
                     </div>
                     <div class="col-lg">
                         <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
                         <p>Puff Chairs</p>
-                        <p>287,00</p>
+                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
                     </div>
                     <div class="col-lg">
                         <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
                         <p>Puff Chairs</p>
-                        <p>287,00</p>
+                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
                     </div>
                 </div>
             </div>
@@ -207,7 +263,7 @@
                         <p class="mb-0"><small><i class="fas fa-phone mr-2"></i>+1 (555) 333 22 11</small></p>
                         <p><small><i class="far fa-envelope mr-2"></i>info@schon.chair</small></p>
                     </div>
-                    <div class="col-lg-5 d-flex justify-content-between mt-5">
+                    <div class="col-lg-5 d-flex justify-content-between mt-5 mt-lg-0">
                         <div>
                             <h5>Category</h5>
                             <ul class="list-unstyled">
@@ -325,24 +381,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script src="js/swiper.min.js"></script>
-
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            centeredSlides: true,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            loop: true,
-        });
-    </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
