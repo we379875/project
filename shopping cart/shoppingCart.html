@@ -26,7 +26,6 @@
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="logo">
             </a>
-            <p class="tel">+1 (555) 333 22 11</p>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,7 +55,6 @@
                         <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                         <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
                         <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
-                        <a class="nav-link" href="#"><i class="fas fa-list-ul"></i></a>
                     </li>
                 </ul>
             </div>
@@ -160,29 +158,34 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <div class="d-flex justify-content-center form">
+                    <input type="text" placeholder="Your Coupon Code">
+                    <button class="btn ml-1">APPLY</button>
+                </div>
             </section>
 
-            <section>
+            <section class="mt-5">
                 <div class="row">
                     <div class="col-6">
-                        <h5>CALCULATE SHIPPING</h5>
-                        <select class="form-control">
+                        <h5 class="ml-3">CALCULATE SHIPPING</h5>
+                        <select class="form-control mt-3">
                             <option>Select Country</option>
                             <option value="Taipei">Taipei</option>
                             <option value="Tainan">Tainan</option>
                             <option value="Kaohsiung">Kaohsiung</option>
                         </select>
-                        <select class="form-control">
+                        <select class="form-control mt-3">
                             <option>State/Province</option>
                         </select>
-                        <select class="form-control">
+                        <select class="form-control mt-3">
                             <option>Zip/Postal Code</option>
                         </select>
-                        <button>UPDATE TOTAL</button>
+                        <button class="btn mt-3">UPDATE TOTAL</button>
                     </div>
                     <div class="col-6">
                         <h5>CART TOTAL</h5>
-                        <div>
+                        <div class="total">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between">
                                     <div>CART SUBTOTAL</div>
@@ -208,44 +211,8 @@
 
     <div id="footer">
 
-        <section class="mt-5 pb-5">
+        <section class="pt-5 pb-5">
             <div class="container">
-                <div class="row py-5">
-                    <div class="col-lg-3 d-flex justify-content-center">
-                        <img src="img/ship.png" alt="" class="mr-3">
-                        <div>
-                            <p class="m-0">FREE SHIPPING</p>
-                            <p class="m-0"><small>Free shipping on all US order</small></p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3  d-flex justify-content-center">
-                        <img src="img/support.png" alt="" class="mr-3">
-                        <div>
-                            <p class="m-0">SUPPORT 24/7</p>
-                            <p class="m-0"><small>We support 24 hours a day</small></p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 d-flex justify-content-center">
-                        <img src="img/gift.png" alt="" class="mr-3">
-                        <div>
-                            <p class="m-0">GIFT CARDS</p>
-                            <p class="m-0"><small>Give perfect gift</small></p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 d-flex justify-content-center">
-                        <img src="img/pay.png" alt="" class="mr-3">
-                        <div>
-                            <p class="m-0">PAYMENT 100% SECURE</p>
-                            <p class="m-0"><small>Payment 100% secure</small></p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <hr class="my-0">
 
                 <div class="row justify-content-between mt-5">
                     <div class="col-lg-3 info">
@@ -328,11 +295,12 @@
                     </div>
                     <div class="col-lg-3 text-right">
                         <h5>Sing Up Newsletter</h5>
+                        <p><small>Subscribe now to get 15% off<br> on any product</small></p>
                         <div class="input-group mb-4">
                             <input type="text" class="form-control" placeholder="Your e-mail"
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                                <button class="btn btn-outline-secondary" type="button">></button>
                             </div>
                         </div>
                         <p class="pt-5 follow">Follow Us</p>

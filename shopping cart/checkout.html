@@ -26,7 +26,6 @@
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" alt="logo">
             </a>
-            <p class="tel">+1 (555) 333 22 11</p>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,7 +55,6 @@
                         <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                         <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
                         <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
-                        <a class="nav-link" href="#"><i class="fas fa-list-ul"></i></a>
                     </li>
                 </ul>
             </div>
@@ -64,11 +62,11 @@
     </div>
 
     <div id="content">
-        <div class="banner text-center py-5 mb-5">
+        <div class="banner text-center pt-5 pb-3 mb-5">
             <div class="container">
-                <h2>SHOPPING CART</h2>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-left">
+                <h2>CHECK OUT</h2>
+                <nav aria-label="breadcrumb cartbreadcrumb">
+                    <ol class="breadcrumb justify-content-left cartbreadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Shopping cart</li>
                     </ol>
@@ -79,17 +77,17 @@
 
         <div class="container">
             <section>
-                <div class="d-flex">
-                    <div>
-                        <div>01</div>
+                <div class="d-flex justify-content-center text-center">
+                    <div class="steps mr-5 active">
+                        <div class="step mb-3">01</div>
                         <p>Shopping Cart</p>
                     </div>
-                    <div>
-                        <div>02</div>
+                    <div class="steps mr-5 active">
+                        <div class="step mb-3">02</div>
                         <p>Check Out</p>
                     </div>
-                    <div>
-                        <div>03</div>
+                    <div class="steps">
+                        <div class="step mb-3">03</div>
                         <p>Order Complete</p>
                     </div>
                 </div>
@@ -97,20 +95,143 @@
 
             <section>
                 <div class="row">
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
+                    <div class="col-6">
+                        <h3>BILLING DETAILS</h3>
+                        <form>
+                            <div class="form-group">
+                                <select id="inputState" class="form-control">
+                                    <option selected>selected country</option>
+                                    <option>TWN</option>
+                                    <option>USA</option>
+                                    <option>JPN</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputCompanyName"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" placeholder="address" style="height:80px;"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputCity" placeholder="Town / City">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputState" placeholder="State / Country">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="inputZip" placeholder="Postcode / Zip">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="inputEmail"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="number" class="form-control" id="inputPhone"
+                                        placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Ship to a different address?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name=""placeholder="Order Notes" style="height:100px;"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <div class="order">
+                            <h3>
+                                YOUR ORDER
+                            </h3>
+                            <ul class="list-group list-group-flush orderList">
+                                <li class="list-group-item" style="border-top:none;">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <p>PRODUCTS</p>
+                                        <p>TOTALS</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="small">Marvelous Modern 3 Seater x1</p>
+                                        <p class="prize">299,00</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="small">Bombi Chair x1</p>
+                                        <p class="prize">532,00</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <p>CART SUBTOTAL</p>
+                                        <p class="prize">532,00</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <p>SHIPPING</p>
+                                        <p class="prize">Free Shipping</p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item" style="border-bottom:none;">
+                                    <div class="d-flex justify-content-between">
+                                        <p>ORDER TOTAL</p>
+                                        <p class="prize">1299,00</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <h3>PAYMENT METHODS</h3>
+                            <ul class="list-group list-group-flush method">
+                                <li class="list-group-item" style="border-top:none;">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <label for="transfer">DIRECT BANK TRANSFER</label>
+                                        <input type="checkbox" id="transfer">
+                                    </div>
+                                    <p class="small">
+                                        Make your payment directly into our bank account. Please use your order id as
+                                        the payment reference. Your order wont be shippided until the funds have cleared
+                                        in our account
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="cheque">CHEQUE PAYMENT</label>
+                                        <input type="checkbox" id="cheque">
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex justify-content-between">
+                                        <label for="PAYPAL">PAYPAL</label>
+                                        <input type="checkbox" id="PAYPAL">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center terms">
+                            <label for="terms" class="mb-0">I’ve read & accept the terms & conditions </label>
+                            <input type="checkbox" id="terms">
+                        </div>
+                        <button class="btn btn-success d-block ml-auto">PROCEED TO CHECKOUT</button>
+                    </div>
                 </div>
             </section>
-        </div>
 
-    </div>
-
-    <div id="footer">
-
-        <section class="mt-5 pb-5">
-            <div class="container">
+            <section>
                 <div class="row py-5">
-                    <div class="col-lg-3 d-flex justify-content-center">
+                    <div class="col-lg-3 d-flex justify-content-center rightLine">
                         <img src="img/ship.png" alt="" class="mr-3">
                         <div>
                             <p class="m-0">FREE SHIPPING</p>
@@ -118,7 +239,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3  d-flex justify-content-center">
+                    <div class="col-lg-3  d-flex justify-content-center rightLine">
                         <img src="img/support.png" alt="" class="mr-3">
                         <div>
                             <p class="m-0">SUPPORT 24/7</p>
@@ -126,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 d-flex justify-content-center">
+                    <div class="col-lg-3 d-flex justify-content-center rightLine">
                         <img src="img/gift.png" alt="" class="mr-3">
                         <div>
                             <p class="m-0">GIFT CARDS</p>
@@ -143,8 +264,15 @@
                     </div>
 
                 </div>
+            </section>
+        </div>
 
-                <hr class="my-0">
+    </div>
+
+    <div id="footer">
+
+        <section class="pt-5 pb-5">
+            <div class="container">
 
                 <div class="row justify-content-between mt-5">
                     <div class="col-lg-3 info">
@@ -227,11 +355,12 @@
                     </div>
                     <div class="col-lg-3 text-right">
                         <h5>Sing Up Newsletter</h5>
+                        <p><small>Subscribe now to get 15% off<br> on any product</small></p>
                         <div class="input-group mb-4">
                             <input type="text" class="form-control" placeholder="Your e-mail"
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                                <button class="btn btn-outline-secondary" type="button">></button>
                             </div>
                         </div>
                         <p class="pt-5 follow">Follow Us</p>

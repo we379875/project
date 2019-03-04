@@ -302,18 +302,105 @@
                 color: #000;
                 font-weight: 600;
             }
-            .delete{
+            .delete {
                 font-weight: 800;
                 color: red;
             }
-            .delete:hover{
+            .delete:hover {
                 cursor: pointer;
             }
-            .number{
+            .number {
                 background: #eee;
                 border: none;
                 padding: 5px 10px;
             }
+        }
+        .form {
+            border-bottom: 1px solid #dee2e6;
+            margin-top: 41.5px;
+            padding-bottom: 41.5px;
+            button {
+                background: #cba233;
+                color: #fff;
+                border-radius: 0;
+                font-weight: 600;
+                letter-spacing: .05em;
+                padding: 8px 20px;
+            }
+            input {
+                padding-left: 15px;
+                width: 200px;
+            }
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-bottom: 30px;
+        }
+        form {
+            color: #808080;
+            input,
+            select,
+            .form-check,
+            textarea {
+                font-size: 0.85em;
+                padding: 10px 15px;
+            }
+            textarea {
+                width: 100%;
+            }
+        }
+        .order {
+            background: #f6f6f6;
+            padding: 30px 50px;
+            margin-top: 54px;
+            .list-group-item {
+                background: none;
+                padding-left: 0;
+                padding-right: 0;
+                p,
+                label {
+                    margin-bottom: 0;
+                    color: #707070;
+                    font-size: 0.85em;
+                    font-weight: 600;
+                }
+                p.small {
+                    color: #aaa;
+                    font-size: 0.75em;
+                }
+                .prize {
+                    color: #000;
+                }
+            }
+            .orderList {
+                margin-bottom: 50px;
+            }
+        }
+        .terms {
+            margin: 30px 50px;
+        }
+        .btn-success {
+            background: #88bd6e;
+            font-weight: 600;
+            border: none;
+        }
+    }
+    section:nth-child(3) {
+        select {
+            width: 80%;
+        }
+        button {
+            background: #f6f6f6;
+            color: #a3a3a3;
+            border: 1px solid #d3d3d3;
+        }
+        .total {
+            border: 1px solid #d3d3d3;
+            padding: 20px;
+        }
+        .rightLine{
+            border-right: 1px solid #e4e4e4;
+            box-sizing: border-box;
         }
     }
 }
@@ -329,7 +416,7 @@
             color: #575757;
             margin-bottom: 30px;
         }
-        li {
+        li,small {
             font-size: 0.8em;
             color: #868686;
             margin-bottom: 15px;
@@ -337,16 +424,23 @@
         .form-control {
             border-radius: 20px 0px 0px 20px;
             font-size: 0.8em;
+            background: none;
+            border: 1px solid #575757;
+            border-right:  none;
         }
         .btn-outline-secondary {
-            color: #fff;
-            background-color: #696969;
+            color: #696969;
+            background-color: none;
             background-image: none;
-            border-color: #696969;
+            border: 1px solid #575757;
+            border-left: none;
             border-radius: 0 20px 20px 0;
         }
         .btn {
             font-size: .8em;
+        }
+        .btn:hover{
+            color: #fff;
         }
         .whiteBTN {
             background: #ffffff;
