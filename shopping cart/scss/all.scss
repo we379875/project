@@ -1,4 +1,5 @@
 #header {
+    background: #f4f4f4;
     .navbar-light .navbar-nav .nav-link {
         color: #313131;
     }
@@ -7,41 +8,10 @@
     }
     .navbar {
         padding: .5rem 0;
-    }
-    nav {
-        a {
-            color: #333;
-        }
-        .nav-item {
-            line-height: 40px;
-            margin-right: 15px;
-        }
-        .fa-shopping-bag {
-            line-height: 40px;
-            margin-right: 10px;
-        }
-        .shoppingcart {
-            span {
-                line-height: 16px;
-                margin-left: 7px;
-            }
-        }
-    }
-    @media (max-width: 1024px) {
-        .tel {
-            display: none;
-        }
-    }
-}
-
-#content {
-    .fa-star {
-        color: #e6c376;
-        font-size: 0.5em;
-        margin-bottom: 10px;
+        background: #fff;
+        padding-left: 2%;
     }
     .banner {
-        background: #f4f4f4;
         h2 {
             color: #494949;
             font-size: 2.5em;
@@ -116,6 +86,38 @@
                 font-size: 0.85em;
             }
         }
+    }
+    nav {
+        a {
+            color: #333;
+        }
+        .nav-item {
+            line-height: 40px;
+            margin-right: 15px;
+        }
+        .fa-shopping-bag {
+            line-height: 40px;
+            margin-right: 10px;
+        }
+        .shoppingcart {
+            span {
+                line-height: 16px;
+                margin-left: 7px;
+            }
+        }
+    }
+    @media (max-width: 1024px) {
+        .tel {
+            display: none;
+        }
+    }
+}
+
+#content {
+    .fa-star {
+        color: #e6c376;
+        font-size: 0.5em;
+        margin-bottom: 10px;
     }
     .sidebar {
         h3 {
@@ -288,6 +290,11 @@
                 border: 2px solid #000;
             }
         }
+        .line {
+            display: inline-block;
+            width: 100px;
+            border: .3px solid #9f9f9f;
+        }
     }
     section:nth-child(2) {
         .table {
@@ -329,7 +336,11 @@
             }
             input {
                 padding-left: 15px;
+                border: 1px solid #dee2e6;
                 width: 200px;
+                @media (max-width: 767.98px) {
+                    width: 100%;
+                }
             }
         }
         h3 {
@@ -347,6 +358,7 @@
             }
             textarea {
                 width: 100%;
+                border: 1px solid #dee2e6;
             }
         }
         .order {
@@ -389,16 +401,30 @@
         select {
             width: 80%;
         }
-        button {
+        .btn {
             background: #f6f6f6;
             color: #a3a3a3;
             border: 1px solid #d3d3d3;
         }
+        .btn-success {
+            background: #88bd6e;
+            color: #fff;
+            font-weight: 600;
+            border: none;
+        }
         .total {
             border: 1px solid #d3d3d3;
-            padding: 20px;
+            padding: 15px;
+            color: #808080;
+            .list-group-item {
+                padding: 8px 0;
+            }
+            .prize {
+                font-weight: 800;
+                color: #000;
+            }
         }
-        .rightLine{
+        .rightLine {
             border-right: 1px solid #e4e4e4;
             box-sizing: border-box;
         }
@@ -416,7 +442,8 @@
             color: #575757;
             margin-bottom: 30px;
         }
-        li,small {
+        li,
+        small {
             font-size: 0.8em;
             color: #868686;
             margin-bottom: 15px;
@@ -426,7 +453,7 @@
             font-size: 0.8em;
             background: none;
             border: 1px solid #575757;
-            border-right:  none;
+            border-right: none;
         }
         .btn-outline-secondary {
             color: #696969;
@@ -439,7 +466,11 @@
         .btn {
             font-size: .8em;
         }
-        .btn:hover{
+        .btn:hover {
+            color: #fff;
+        }
+        .subscribe{
+            background: #696969;
             color: #fff;
         }
         .whiteBTN {

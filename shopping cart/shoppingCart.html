@@ -22,46 +22,49 @@
 
 <body>
     <div id="header">
-        <nav class="navbar navbar-expand-lg navbar-light mx-5">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto mr-">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto mr-">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
 
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-                        <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
-                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <div id="content">
+                        <li class="nav-item d-flex">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <div class="banner text-center pt-5 pb-3 mb-5">
             <div class="container">
                 <h2>SHOPPING CART</h2>
@@ -74,16 +77,22 @@
             </div>
 
         </div>
+    </div>
+
+    <div id="content">
+
 
         <div class="container">
             <section>
                 <div class="d-flex justify-content-center text-center">
-                    <div class="steps mr-5 active">
+                    <div class="steps active">
                         <div class="step mb-3">01</div>
                         <p>Shopping Cart</p>
                     </div>
-                    <div class="steps mr-5">
+                    <div class="steps">
+                        <span class="line"></span>
                         <div class="step mb-3">02</div>
+                        <span class="line"></span>
                         <p>Check Out</p>
                     </div>
                     <div class="steps">
@@ -167,7 +176,7 @@
 
             <section class="mt-5">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6 mb-5 mb-sm-0">
                         <h5 class="ml-3">CALCULATE SHIPPING</h5>
                         <select class="form-control mt-3">
                             <option>Select Country</option>
@@ -181,15 +190,15 @@
                         <select class="form-control mt-3">
                             <option>Zip/Postal Code</option>
                         </select>
-                        <button class="btn mt-3">UPDATE TOTAL</button>
+                        <button class="btn mt-3">UPDATE TOTAL <i class="fas fa-sync-alt"></i></button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                         <h5>CART TOTAL</h5>
                         <div class="total">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item d-flex justify-content-between">
                                     <div>CART SUBTOTAL</div>
-                                    <div>1299,00</div>
+                                    <div class="prize"><i class="fas fa-euro-sign"></i> 1299,00</div>
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between">
                                     <div>SHIPPING</div>
@@ -197,11 +206,12 @@
                                 </li>
                                 <li class="list-group-item d-flex justify-content-between">
                                     <div>CART TOTAL</div>
-                                    <div>1299,00</div>
+                                    <div class="prize"><i class="fas fa-euro-sign"></i> 1299,00</div>
                                 </li>
                             </ul>
-                            <button type="button" class="btn btn-success">PROCEED TO CHECKOUT</button>
                         </div>
+                        <button type="button" class="btn btn-success mt-3 d-block ml-auto">PROCEED TO CHECKOUT <i
+                                class="fas fa-check"></i></button>
                     </div>
                 </div>
             </section>
@@ -211,7 +221,7 @@
 
     <div id="footer">
 
-        <section class="pt-5 pb-5">
+        <section class="pt-5 pb-5 mt-5">
             <div class="container">
 
                 <div class="row justify-content-between mt-5">

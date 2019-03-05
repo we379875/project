@@ -22,46 +22,50 @@
 
 <body>
     <div id="header">
-        <nav class="navbar navbar-expand-lg navbar-light mx-5">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto mr-">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto mr-">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
 
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-                        <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
-                        <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+                        <li class="nav-item d-flex">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-    <div id="content">
         <div class="banner text-center pt-5 pb-3 mb-5">
             <div class="container">
                 <h2>CHECK OUT</h2>
@@ -74,16 +78,22 @@
             </div>
 
         </div>
+    </div>
+
+    <div id="content">
+
 
         <div class="container">
             <section>
                 <div class="d-flex justify-content-center text-center">
-                    <div class="steps mr-5 active">
+                    <div class="steps active">
                         <div class="step mb-3">01</div>
                         <p>Shopping Cart</p>
                     </div>
-                    <div class="steps mr-5 active">
+                    <div class="steps active">
+                        <span class="line"></span>
                         <div class="step mb-3">02</div>
+                        <span class="line"></span>
                         <p>Check Out</p>
                     </div>
                     <div class="steps">
@@ -95,7 +105,7 @@
 
             <section>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <h3>BILLING DETAILS</h3>
                         <form>
                             <div class="form-group">
@@ -149,11 +159,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea name=""placeholder="Order Notes" style="height:100px;"></textarea>
+                                <textarea name="" placeholder="Order Notes" style="height:100px;"></textarea>
                             </div>
                         </form>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6">
                         <div class="order">
                             <h3>
                                 YOUR ORDER
@@ -166,17 +176,17 @@
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <p class="small">Marvelous Modern 3 Seater x1</p>
-                                        <p class="prize">299,00</p>
+                                        <p class="prize"><i class="fas fa-euro-sign"></i> 299,00</p>
                                     </div>
                                     <div class="d-flex justify-content-between">
                                         <p class="small">Bombi Chair x1</p>
-                                        <p class="prize">532,00</p>
+                                        <p class="prize"><i class="fas fa-euro-sign"></i> 532,00</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="d-flex justify-content-between">
                                         <p>CART SUBTOTAL</p>
-                                        <p class="prize">532,00</p>
+                                        <p class="prize"><i class="fas fa-euro-sign"></i> 532,00</p>
                                     </div>
                                 </li>
                                 <li class="list-group-item">
@@ -188,7 +198,7 @@
                                 <li class="list-group-item" style="border-bottom:none;">
                                     <div class="d-flex justify-content-between">
                                         <p>ORDER TOTAL</p>
-                                        <p class="prize">1299,00</p>
+                                        <p class="prize"><i class="fas fa-euro-sign"></i> 1299,00</p>
                                     </div>
                                 </li>
                             </ul>
@@ -224,7 +234,8 @@
                             <label for="terms" class="mb-0">I’ve read & accept the terms & conditions </label>
                             <input type="checkbox" id="terms">
                         </div>
-                        <button class="btn btn-success d-block ml-auto">PROCEED TO CHECKOUT</button>
+                        <button class="btn btn-success d-block ml-auto">PROCEED TO CHECKOUT <i
+                                class="fas fa-check"></i></button>
                     </div>
                 </div>
             </section>

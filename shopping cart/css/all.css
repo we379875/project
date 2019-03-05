@@ -1,85 +1,79 @@
-#header .navbar-light .navbar-nav .nav-link {
-  color: #313131; }
-
-#header .navbar-light .navbar-nav .nav-link:hover {
-  color: #aaa; }
-
-#header .navbar {
-  padding: .5rem 0; }
-
-#header nav a {
-  color: #333; }
-
-#header nav .nav-item {
-  line-height: 40px;
-  margin-right: 15px; }
-
-#header nav .fa-shopping-bag {
-  line-height: 40px;
-  margin-right: 10px; }
-
-#header nav .shoppingcart span {
-  line-height: 16px;
-  margin-left: 7px; }
-
-@media (max-width: 1024px) {
-  #header .tel {
-    display: none; } }
+#header {
+  background: #f4f4f4; }
+  #header .navbar-light .navbar-nav .nav-link {
+    color: #313131; }
+  #header .navbar-light .navbar-nav .nav-link:hover {
+    color: #aaa; }
+  #header .navbar {
+    padding: .5rem 0;
+    background: #fff;
+    padding-left: 2%; }
+  #header .banner h2 {
+    color: #494949;
+    font-size: 2.5em;
+    font-weight: 700; }
+  #header .banner .breadcrumb {
+    background: #f4f4f4;
+    padding: 0; }
+    #header .banner .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      content: ">"; }
+    #header .banner .breadcrumb a {
+      color: #b6b6b6; }
+  #header .banner .search a {
+    color: #c2c2c2;
+    font-size: 0.75em; }
+  #header .banner .product-pic .img {
+    width: 88%; }
+  #header .banner .product-pic p {
+    color: #b6b6b6; }
+  #header .banner .product-pic .owl-dots {
+    display: none; }
+  #header .banner .product-detail nav {
+    font-size: 0.85em;
+    font-weight: 600; }
+    #header .banner .product-detail nav li {
+      color: #b6b6b6; }
+    #header .banner .product-detail nav .breadcrumb-item::before {
+      color: #b6b6b6; }
+  #header .banner .product-detail h3 {
+    color: #212121;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: .25em; }
+  #header .banner .product-detail p {
+    font-size: 0.75em;
+    color: #b6b6b6;
+    font-weight: 600; }
+  #header .banner .product-detail .artical p {
+    font-weight: normal;
+    font-size: 1em; }
+  #header .banner .product-detail .prize {
+    font-size: 2em;
+    color: #212121; }
+    #header .banner .product-detail .prize span {
+      color: #b6b6b6;
+      font-size: .75em; }
+  #header .banner .cartbreadcrumb li {
+    font-size: 0.85em; }
+  #header nav a {
+    color: #333; }
+  #header nav .nav-item {
+    line-height: 40px;
+    margin-right: 15px; }
+  #header nav .fa-shopping-bag {
+    line-height: 40px;
+    margin-right: 10px; }
+  #header nav .shoppingcart span {
+    line-height: 16px;
+    margin-left: 7px; }
+  @media (max-width: 1024px) {
+    #header .tel {
+      display: none; } }
 
 #content .fa-star {
   color: #e6c376;
   font-size: 0.5em;
   margin-bottom: 10px; }
-
-#content .banner {
-  background: #f4f4f4; }
-  #content .banner h2 {
-    color: #494949;
-    font-size: 2.5em;
-    font-weight: 700; }
-  #content .banner .breadcrumb {
-    background: #f4f4f4;
-    padding: 0; }
-    #content .banner .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-      content: ">"; }
-    #content .banner .breadcrumb a {
-      color: #b6b6b6; }
-  #content .banner .search a {
-    color: #c2c2c2;
-    font-size: 0.75em; }
-  #content .banner .product-pic .img {
-    width: 88%; }
-  #content .banner .product-pic p {
-    color: #b6b6b6; }
-  #content .banner .product-pic .owl-dots {
-    display: none; }
-  #content .banner .product-detail nav {
-    font-size: 0.85em;
-    font-weight: 600; }
-    #content .banner .product-detail nav li {
-      color: #b6b6b6; }
-    #content .banner .product-detail nav .breadcrumb-item::before {
-      color: #b6b6b6; }
-  #content .banner .product-detail h3 {
-    color: #212121;
-    font-size: 2em;
-    font-weight: 400;
-    letter-spacing: .25em; }
-  #content .banner .product-detail p {
-    font-size: 0.75em;
-    color: #b6b6b6;
-    font-weight: 600; }
-  #content .banner .product-detail .artical p {
-    font-weight: normal;
-    font-size: 1em; }
-  #content .banner .product-detail .prize {
-    font-size: 2em;
-    color: #212121; }
-    #content .banner .product-detail .prize span {
-      color: #b6b6b6;
-      font-size: .75em; }
-  #content .banner .cartbreadcrumb li {
-    font-size: 0.85em; }
 
 #content .sidebar h3 {
   color: #494949;
@@ -219,6 +213,11 @@
   #content section:nth-child(1) .active .step {
     border: 2px solid #000; }
 
+#content section:nth-child(1) .line {
+  display: inline-block;
+  width: 100px;
+  border: .3px solid #9f9f9f; }
+
 #content section:nth-child(2) .table td,
 #content section:nth-child(2) .table th {
   border-top: none;
@@ -255,7 +254,11 @@
     padding: 8px 20px; }
   #content section:nth-child(2) .form input {
     padding-left: 15px;
+    border: 1px solid #dee2e6;
     width: 200px; }
+    @media (max-width: 767.98px) {
+      #content section:nth-child(2) .form input {
+        width: 100%; } }
 
 #content section:nth-child(2) h3 {
   font-size: 1.15em;
@@ -270,7 +273,8 @@
     font-size: 0.85em;
     padding: 10px 15px; }
   #content section:nth-child(2) form textarea {
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #dee2e6; }
 
 #content section:nth-child(2) .order {
   background: #f6f6f6;
@@ -305,14 +309,26 @@
 #content section:nth-child(3) select {
   width: 80%; }
 
-#content section:nth-child(3) button {
+#content section:nth-child(3) .btn {
   background: #f6f6f6;
   color: #a3a3a3;
   border: 1px solid #d3d3d3; }
 
+#content section:nth-child(3) .btn-success {
+  background: #88bd6e;
+  color: #fff;
+  font-weight: 600;
+  border: none; }
+
 #content section:nth-child(3) .total {
   border: 1px solid #d3d3d3;
-  padding: 20px; }
+  padding: 15px;
+  color: #808080; }
+  #content section:nth-child(3) .total .list-group-item {
+    padding: 8px 0; }
+  #content section:nth-child(3) .total .prize {
+    font-weight: 800;
+    color: #000; }
 
 #content section:nth-child(3) .rightLine {
   border-right: 1px solid #e4e4e4;
@@ -327,7 +343,8 @@
     font-size: 1em;
     color: #575757;
     margin-bottom: 30px; }
-  #footer section:nth-child(1) li, #footer section:nth-child(1) small {
+  #footer section:nth-child(1) li,
+  #footer section:nth-child(1) small {
     font-size: 0.8em;
     color: #868686;
     margin-bottom: 15px; }
@@ -347,6 +364,9 @@
   #footer section:nth-child(1) .btn {
     font-size: .8em; }
   #footer section:nth-child(1) .btn:hover {
+    color: #fff; }
+  #footer section:nth-child(1) .subscribe {
+    background: #696969;
     color: #fff; }
   #footer section:nth-child(1) .whiteBTN {
     background: #ffffff;

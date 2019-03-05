@@ -396,6 +396,7 @@
         .counter-stool {
             top: 10%;
             left: 15%;
+            word-wrap:break-word;
             .title {
                 font-size: 0.75em;
                 font-weight: 600;
@@ -712,6 +713,13 @@
                 font-size: 0.5em;
                 letter-spacing: 2px;
             }
+        }
+        .owl-nav{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
         }
     } // about
     .banner {

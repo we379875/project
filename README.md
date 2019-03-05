@@ -14,3 +14,22 @@ about.html<br>
 
 contact.html <br>
 sidebar 會被隱藏起來，並將sidebar打開多一個背景色以便閱讀<br>
+
+2/25<br>
+list.html<br>
+將靜態網頁做出來，header,footer跟之前版型差不多，能用複製的。<br>
+filter by price 的橫槓 ，利用JQuery UI 的slider做出來
+
+2/26<br>
+將list的RWD做出來
+
+3/4<br>
+shopping cart的靜態網頁<br>
+step那邊的中間隔線，利用span和css做出來，
+購物清單方面，boostrap的table的模板來用
+
+3/5<br>
+checkout的靜態網頁<br>
+用form來做表單<br>
+list group 做your order
+
