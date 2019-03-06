@@ -475,6 +475,9 @@ nav {
         .rightLine {
             border-right: 1px solid #e4e4e4;
             box-sizing: border-box;
+            @media (max-width: 992px) {
+                border-right: none;
+            }
         }
     }
 }

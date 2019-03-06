@@ -398,6 +398,9 @@ nav .shoppingcart span {
   border-right: 1px solid #e4e4e4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  @media (max-width: 992px) {
+    #content section:nth-child(3) .rightLine {
+      border-right: none; } }
 
 #footer section:nth-child(1) {
   background: #f6f6f6; }
