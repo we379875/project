@@ -1,0 +1,19 @@
+.shoppingCart {
+  width: 350px;
+  padding: 20px;
+  background: #ccc;
+  color: #878787;
+  font-weight: 600; }
+  .shoppingCart p {
+    margin: 0;
+    font-size: 0.85em; }
+  .shoppingCart .price {
+    color: #000; }
+  .shoppingCart .delete {
+    color: red;
+    font-weight: 800; }
+  .shoppingCart .delete:hover {
+    cursor: pointer; }
+  .shoppingCart .btn {
+    padding: 5px 30px;
+    border-radius: 20px; }

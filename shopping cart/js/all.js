@@ -22,10 +22,6 @@ $(document).ready(function () {
         responsiveClass:true,
         merge:true,
         responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
             600:{
                 items:3,
                 nav:false,
@@ -39,4 +35,10 @@ $(document).ready(function () {
             }
         }
     })
+
+    // $('.cart').click(function (e) { 
+    //     e.preventDefault();
+    //     $('.shoppingCart').toggle();
+    //     $("body").css("background-color","rgba(0,0,0,.1)");
+    // });
 });
