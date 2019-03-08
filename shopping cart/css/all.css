@@ -1,4 +1,5 @@
 .shoppingCart {
+  opacity: 1 !important;
   display: none;
   position: absolute;
   top: 72.8px;
@@ -22,6 +23,22 @@
   .shoppingCart .btn {
     padding: 5px 30px;
     border-radius: 20px; }
+  @media (max-width: 350px) {
+    .shoppingCart {
+      width: 100%;
+      overflow: auto; } }
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.5;
+  display: none; }
 
 .banner h2 {
   color: #494949;
@@ -215,6 +232,12 @@ nav .shoppingcart span {
   color: #fff;
   background: #a5a5a5; }
 
+@media (max-width: 576px) {
+  #content .content .title p {
+    font-size: 0.5em; }
+  #content .content .title a {
+    font-size: .5em; } }
+
 #content .content .product {
   line-height: .5em; }
   #content .content .product p {
@@ -282,28 +305,41 @@ nav .shoppingcart span {
   #content section:nth-child(1) .steps p {
     font-size: 0.5em; } }
 
-#content section:nth-child(2) .table td,
-#content section:nth-child(2) .table th {
-  border-top: none;
-  border-bottom: 1px solid #dee2e6;
-  color: #808080; }
-
-#content section:nth-child(2) .table td {
-  line-height: 92.8px;
-  color: #000;
+#content section:nth-child(2) .shoppingList {
+  color: #808080;
   font-weight: 600; }
-
-#content section:nth-child(2) .table .delete {
-  font-weight: 800;
-  color: red; }
-
-#content section:nth-child(2) .table .delete:hover {
-  cursor: pointer; }
-
-#content section:nth-child(2) .table .number {
-  background: #eee;
-  border: none;
-  padding: 5px 10px; }
+  #content section:nth-child(2) .shoppingList .listTitle .product {
+    margin-right: 50%; }
+  #content section:nth-child(2) .shoppingList .listTitle .shoppingItem {
+    margin-right: 80px; }
+  #content section:nth-child(2) .shoppingList .listItem .shoppingItem {
+    display: inline-block;
+    margin-right: 80px; }
+  #content section:nth-child(2) .shoppingList .listItem .productName {
+    margin-right: 258.09px; }
+  #content section:nth-child(2) .shoppingList .listItem .delete {
+    font-weight: 800;
+    color: red; }
+  #content section:nth-child(2) .shoppingList .listItem .number {
+    background: #eee;
+    border: none;
+    padding: 5px 10px; }
+  #content section:nth-child(2) .shoppingList .listItem .price {
+    color: #000; }
+  @media (max-width: 991.98px) {
+    #content section:nth-child(2) .shoppingList .listTitle {
+      display: none; }
+    #content section:nth-child(2) .shoppingList .listItem .productName {
+      margin-right: 0; }
+    #content section:nth-child(2) .shoppingList .listItem .delete {
+      margin-left: 30%; } }
+  @media (max-width: 575.98px) {
+    #content section:nth-child(2) .shoppingList .listItem {
+      font-size: .85em; }
+      #content section:nth-child(2) .shoppingList .listItem .productName {
+        font-size: .85em; }
+      #content section:nth-child(2) .shoppingList .listItem .delete {
+        margin-left: 5%; } }
 
 #content section:nth-child(2) .form {
   border-bottom: 1px solid #dee2e6;
@@ -357,13 +393,21 @@ nav .shoppingcart span {
     #content section:nth-child(2) .order .list-group-item p.small {
       color: #aaa;
       font-size: 0.75em; }
-    #content section:nth-child(2) .order .list-group-item .prize {
+    #content section:nth-child(2) .order .list-group-item .price {
       color: #000; }
+    @media (max-width: 575.98px) {
+      #content section:nth-child(2) .order .list-group-item .price {
+        font-size: 0.75em; }
+      #content section:nth-child(2) .order .list-group-item p.small {
+        font-size: 0.5em; } }
   #content section:nth-child(2) .order .orderList {
     margin-bottom: 50px; }
 
 #content section:nth-child(2) .terms {
   margin: 30px 50px; }
+  @media (max-width: 575.98px) {
+    #content section:nth-child(2) .terms label {
+      font-size: 0.85em; } }
 
 #content section:nth-child(2) .btn-success {
   background: #88bd6e;

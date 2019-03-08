@@ -1,4 +1,5 @@
 .shoppingCart{
+    opacity: 1!important;
     display: none;
     position: absolute;
     top: 72.8px;
@@ -27,4 +28,21 @@
         padding: 5px 30px;
         border-radius: 20px
     }
+    @media(max-width: 350px){
+        width: 100%;
+        overflow: auto;
+    }
 }
+
+.Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.5;
+    display: none;
+  }

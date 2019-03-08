@@ -1,5 +1,4 @@
 @import 'shoppingCartCss';
-
 .banner {
     h2 {
         color: #494949;
@@ -22,7 +21,6 @@
             font-size: 0.75em;
         }
     }
-    
     .cartbreadcrumb {
         li {
             font-size: 0.85em;
@@ -143,12 +141,12 @@ nav {
                     font-size: .75em;
                 }
             }
-            select{
+            select {
                 border-radius: 10px;
                 color: #a6a6a6;
                 font-weight: 600;
             }
-            .btn-danger{
+            .btn-danger {
                 border-radius: 50px;
             }
         }
@@ -258,6 +256,14 @@ nav {
                 color: #fff;
                 background: #a5a5a5;
             }
+            @media (max-width: 576px) {
+                p {
+                    font-size: 0.5em;
+                }
+                a {
+                    font-size: .5em;
+                }
+            }
         }
         .product {
             line-height: .5em;
@@ -345,29 +351,61 @@ nav {
         }
     }
     section:nth-child(2) {
-        .table {
-            td,
-            th {
-                border-top: none;
-                border-bottom: 1px solid #dee2e6;
-                color: #808080;
+        .shoppingList {
+            color: #808080;
+            font-weight: 600;
+            .listTitle {
+                .product {
+                    margin-right: 50%;
+                }
+                .shoppingItem {
+                    margin-right: 80px;
+                }
             }
-            td {
-                line-height: 92.8px;
-                color: #000;
-                font-weight: 600;
+            .listItem {
+                .shoppingItem {
+                    display: inline-block;
+                    margin-right: 80px;
+                }
+                .productName {
+                    margin-right: 258.09px;
+                }
+                .delete {
+                    font-weight: 800;
+                    color: red;
+                }
+                .number {
+                    background: #eee;
+                    border: none;
+                    padding: 5px 10px;
+                }
+                .price {
+                    color: #000;
+                }
             }
-            .delete {
-                font-weight: 800;
-                color: red;
+            @media (max-width: 991.98px) {
+                .listTitle {
+                    display: none;
+                }
+                .listItem {
+                    .productName {
+                        margin-right: 0;
+                    }
+                    .delete {
+                        margin-left: 30%;
+                    }
+                }
             }
-            .delete:hover {
-                cursor: pointer;
-            }
-            .number {
-                background: #eee;
-                border: none;
-                padding: 5px 10px;
+            @media (max-width: 575.98px) {
+                .listItem {
+                    font-size: .85em;
+                    .productName {
+                        font-size: .85em;
+                    }
+                    .delete {
+                        margin-left: 5%;
+                    }
+                }
             }
         }
         .form {
@@ -428,8 +466,16 @@ nav {
                     color: #aaa;
                     font-size: 0.75em;
                 }
-                .prize {
+                .price {
                     color: #000;
+                }
+                @media (max-width: 575.98px) {
+                    .price{
+                        font-size: 0.75em;
+                    }
+                    p.small{
+                        font-size: 0.5em;
+                    }
                 }
             }
             .orderList {
@@ -438,6 +484,11 @@ nav {
         }
         .terms {
             margin: 30px 50px;
+            @media (max-width: 575.98px){
+                label{
+                    font-size: 0.85em;
+                }
+            }
         }
         .btn-success {
             background: #88bd6e;

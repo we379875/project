@@ -35,10 +35,4 @@ $(document).ready(function () {
             }
         }
     })
-
-    // $('.cart').click(function (e) { 
-    //     e.preventDefault();
-    //     $('.shoppingCart').toggle();
-    //     $("body").css("background-color","rgba(0,0,0,.1)");
-    // });
 });
