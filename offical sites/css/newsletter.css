@@ -1,0 +1,75 @@
+.newsletter {
+  display: none;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  z-index: 100;
+  background: url("../img/newsletterBG_03.png");
+  background-size: cover;
+  padding: 80px 100px 50px 50px;
+  width: 800px;
+  margin: 0 auto; }
+  .newsletter h5 {
+    font-weight: 800;
+    font-size: 1.75em;
+    letter-spacing: .1em; }
+  .newsletter p {
+    color: #6d6c6c;
+    font-weight: 600; }
+    .newsletter p span {
+      color: #f53434; }
+  .newsletter .email {
+    margin-top: 30px;
+    background: #f2f2f2;
+    border: none;
+    padding: 5px 100px 5px 10px;
+    border-radius: 30px; }
+  .newsletter .email:focus {
+    outline: none; }
+  .newsletter .btn {
+    margin-top: 10px;
+    background: #ff8283;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 600; }
+  .newsletter .form-check {
+    margin-top: 50px; }
+    .newsletter .form-check label {
+      color: #999999; }
+  .newsletter .cancel {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #999999; }
+  @media (max-width: 800px) {
+    .newsletter {
+      width: 100%;
+      background-size: cover;
+      background-position: 50%;
+      -webkit-transform: translate(-50%, 30%);
+      -ms-transform: translate(-50%, 30%);
+      transform: translate(-50%, 30%); } }
+  @media (max-width: 500px) {
+    .newsletter h5 {
+      font-size: 1.25em; }
+    .newsletter p {
+      font-size: .8em; }
+    .newsletter .email {
+      width: 250px; }
+    .newsletter label {
+      font-size: 0.75em; } }
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.5;
+  display: none; }

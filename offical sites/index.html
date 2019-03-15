@@ -15,10 +15,30 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/search.css">
 
 </head>
 
 <body>
+    <div class="newsletter">
+        <h5>
+            JOIN OUR NEWSLETTER
+        </h5>
+        <p>Subscribe now to get <span>15%</span> off on any product!</p>
+
+        <input type="text" placeholder="Enter your e-mail" class="email">
+        <button class="btn d-block">SUBSCRIBE</button>
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="dontShow">
+            <label class="form-check-label" for="dontShow">
+                Don’t show this popup again
+            </label>
+        </div>
+        <a href="#" class="cancel"><i class="fas fa-times"></i></a>
+    </div>
+    <div class="Overlay"></div>
     <div id="header">
         <div class="header">
             <div class="container">
@@ -37,6 +57,47 @@
         </div>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="shoppingCart">
+                    <div class="d-flex align-items-center">
+                        <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
+                        <div>
+                            <p>Marvelous Modern 3 Seater</p>
+                            <p class="price"><i class="fas fa-euro-sign"></i> 599,00</p>
+                            <p>QTY:1</p>
+                        </div>
+                        <div class="delete ml-3">x</div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
+                        <div>
+                            <p>Marvelous Modern 3 Seater</p>
+                            <p class="price"><i class="fas fa-euro-sign"></i> 599,00</p>
+                            <p>QTY:1</p>
+                        </div>
+                        <div class="delete ml-3">x</div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                        <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
+                        <div>
+                            <p>Marvelous Modern 3 Seater</p>
+                            <p class="price"><i class="fas fa-euro-sign"></i> 599,00</p>
+                            <p>QTY:1</p>
+                        </div>
+                        <div class="delete ml-3">x</div>
+                    </div>
+
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <p>Sub Total</p>
+                        <p class="price"><i class="fas fa-euro-sign"></i> 799,00</p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <a href="#" class="btn btn-outline-dark" role="button">VIEW CART</a>
+                        <a href="#" class="btn btn-dark" role="button">CHECKOUT</a>
+                    </div>
+                </div>
+
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="logo">
                 </a>
@@ -50,8 +111,67 @@
                             <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCTS<i class="fas fa-angle-down ml-2"></i></a>
+                            <a class="nav-link dropdown product" href="#">PRODUCTS<i
+                                    class="fas fa-angle-down ml-2"></i></a>
                         </li>
+                        <div class="menu1">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <h5>SOFAS & ARMCHAIRS</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Armchairs</a></li>
+                                        <li><a href="#">Poufs</a></li>
+                                        <li><a href="#">Footstools</a></li>
+                                        <li><a href="#">Lounge Chairs</a></li>
+                                    </ul>
+
+                                    <h5 class="mt-3">ACCESSORIES</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Armchairs</a></li>
+                                        <li><a href="#">Poufs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5>TABLES & CHAIRS</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Stools</a></li>
+                                        <li><a href="#">Benches</a></li>
+                                        <li><a href="#">Coffe Tables</a></li>
+                                        <li><a href="#">Console Tables</a></li>
+                                        <li><a href="#">Secret Desks</a></li>
+                                    </ul>
+
+                                    <h5 class="mt-3">OFFICE</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Office Desks</a></li>
+                                        <li><a href="#">Meeting Tables</a></li>
+                                        <li><a href="#">Task Chairs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <h5>KITCHEN FURNITURE</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Kitchen Taps</a></li>
+                                        <li><a href="#">Breakfast time</a></li>
+                                        <li><a href="#">Cooking</a></li>
+                                        <li><a href="#">Food Strorage Boxes</a></li>
+                                        <li><a href="#">Spice Jars</a></li>
+                                        <li><a href="#">Napskins</a></li>
+                                        <li><a href="#">Oven Gloves</a></li>
+                                        <li><a href="#">Placemats</a></li>
+                                        <li><a href="#">Cooking</a></li>
+                                        <li><a href="#">Food Storage Boxes</a></li>
+                                        <li><a href="#">Spice Jars</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div><img src="https://fakeimg.pl/218x307/f8f8f8/" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
                         </li>
@@ -66,10 +186,10 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                            <a class="nav-link search" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"   href="#"><i class="fas fa-search"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex shoppingcart" href="#">
+                            <a class="nav-link d-flex shoppingcart cart" href="#">
                                 <i class="fas fa-shopping-bag"></i>
                                 <span>
                                     SHOPPING CART
@@ -83,7 +203,18 @@
         </div>
     </div>
 
+    <div class="searchPage">
+        <div class="d-flex justify-content-center align-items-center">
+            <input type="text" placeholder="Search...">
+            <a href="#" class="pr-3"><i class="fas fa-microphone"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <a href="#" class="cancel text-center d-block">x</a>
+    </div>
+
     <div id="content" class="mt-3">
+
+
         <div class="container">
             <section>
                 <div class="row">
@@ -536,9 +667,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -547,7 +676,10 @@
         crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/all.js"></script>
-
+    <script src="js/menu.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

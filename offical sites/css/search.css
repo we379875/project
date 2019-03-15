@@ -1,0 +1,59 @@
+.menu1 {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 75px;
+  width: 960px;
+  background: #fff;
+  padding: 30px 50px; }
+  .menu1 h5 {
+    border-bottom: 2px solid #000;
+    font-size: 1em;
+    padding-bottom: 5px;
+    width: 60px;
+    white-space: nowrap; }
+  .menu1 a {
+    font-size: 0.75em;
+    color: #757575; }
+  @media (max-width: 1199.98px) {
+    .menu1 {
+      width: 100%;
+      overflow: scroll; }
+      .menu1 .col-lg-3 {
+        margin-top: 1rem; } }
+
+.menu2 {
+  width: 750px;
+  background: #eee;
+  margin-top: 30px; }
+
+.searchPage {
+  display: none;
+  background: #f6f6f6;
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 20px;
+  position: fixed;
+  z-index: 200; }
+  .searchPage input {
+    width: 500px;
+    background: none;
+    border: none;
+    border-left: 1px solid #000;
+    font-size: 1.5em;
+    padding: 10px 0px 10px 10px; }
+  .searchPage input:focus {
+    outline: none; }
+  .searchPage a {
+    color: #9d9d9d;
+    font-size: 1.5em; }
+  .searchPage .cancel {
+    margin-top: 240px; }
+  @media (max-width: 600px) {
+    .searchPage {
+      text-align: center;
+      margin: 0 auto; } }
+  @media (max-width: 400px) {
+    .searchPage input {
+      width: 200px;
+      font-size: 1.25em; } }

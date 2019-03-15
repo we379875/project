@@ -1,3 +1,78 @@
+.menu1 {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  top: 75px;
+  width: 960px;
+  background: #fff;
+  padding: 30px 50px; }
+  .menu1 h5 {
+    border-bottom: 2px solid #000;
+    font-size: 1em;
+    padding-bottom: 5px;
+    width: 60px;
+    white-space: nowrap; }
+  .menu1 a {
+    font-size: 0.75em;
+    color: #757575; }
+  @media (max-width: 1199.98px) {
+    .menu1 {
+      width: 100%;
+      overflow: scroll; }
+      .menu1 .col-lg-3 {
+        margin-top: 1rem; } }
+
+.menu2 {
+  width: 750px;
+  background: #eee;
+  margin-top: 30px; }
+
+.shoppingCart {
+  opacity: 1 !important;
+  display: none;
+  position: absolute;
+  top: 72.8px;
+  right: 0;
+  z-index: 100;
+  width: 350px;
+  padding: 20px;
+  background: #fff;
+  color: #878787;
+  font-weight: 600; }
+  .shoppingCart p {
+    margin: 0;
+    font-size: 0.85em; }
+  .shoppingCart .price {
+    color: #000; }
+  .shoppingCart .delete {
+    color: red;
+    font-weight: 800; }
+  .shoppingCart .delete:hover {
+    cursor: pointer; }
+  .shoppingCart .btn {
+    padding: 5px 30px;
+    border-radius: 20px; }
+  .shoppingCart .btn:hover {
+    color: #fff !important; }
+  .shoppingCart .btn-dark {
+    color: #fff !important; }
+  @media (max-width: 350px) {
+    .shoppingCart {
+      width: 100%;
+      overflow: auto; } }
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.5;
+  display: none; }
+
 #header .header {
   background: #282828; }
   #header .header a {

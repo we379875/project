@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/search.css">
+
+</head>
+
+<body>
+    <div class="Overlay"></div>
+    <div id="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown product" href="#">PRODUCTS<i
+                                    class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <div class="menu1">
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5>SOFAS & ARMCHAIRS</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Armchairs</a></li>
+                                        <li><a href="#">Poufs</a></li>
+                                        <li><a href="#">Footstools</a></li>
+                                        <li><a href="#">Lounge Chairs</a></li>
+                                    </ul>
+
+                                    <h5 class="mt-3">ACCESSORIES</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Armchairs</a></li>
+                                        <li><a href="#">Poufs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3">
+                                    <h5>TABLES & CHAIRS</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sofas</a></li>
+                                        <li><a href="#">Stools</a></li>
+                                        <li><a href="#">Benches</a></li>
+                                        <li><a href="#">Coffe Tables</a></li>
+                                        <li><a href="#">Console Tables</a></li>
+                                        <li><a href="#">Secret Desks</a></li>
+                                    </ul>
+
+                                    <h5 class="mt-3">OFFICE</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Office Desks</a></li>
+                                        <li><a href="#">Meeting Tables</a></li>
+                                        <li><a href="#">Task Chairs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3">
+                                    <h5>KITCHEN FURNITURE</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Kitchen Taps</a></li>
+                                        <li><a href="#">Breakfast time</a></li>
+                                        <li><a href="#">Cooking</a></li>
+                                        <li><a href="#">Food Strorage Boxes</a></li>
+                                        <li><a href="#">Spice Jars</a></li>
+                                        <li><a href="#">Napskins</a></li>
+                                        <li><a href="#">Oven Gloves</a></li>
+                                        <li><a href="#">Placemats</a></li>
+                                        <li><a href="#">Cooking</a></li>
+                                        <li><a href="#">Food Storage Boxes</a></li>
+                                        <li><a href="#">Spice Jars</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-3">
+                                    <div><img src="https://fakeimg.pl/218x307/f8f8f8/" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog/blog-postlist-sidebar.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex shoppingcart" href="#">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>
+                                    SHOPPING CART
+                                    <br><small>3 items $74.00</small>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="searchPage">
+        <div class="d-flex justify-content-center align-items-center">
+            <input type="text" placeholder="Search...">
+            <a href="#" class="pr-3"><i class="fas fa-microphone"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+        <a href="#" class="cancel text-center d-block">x</a>
+    </div>
+<!-- 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/all.js"></script> -->
+</body>
+
+</html>

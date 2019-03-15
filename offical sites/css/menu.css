@@ -1,0 +1,15 @@
+.menu1 {
+  position: absolute;
+  width: 70%;
+  background: #fff;
+  padding: 30px 50px; }
+  .menu1 h5 {
+    font-size: 1em; }
+  .menu1 a {
+    font-size: 0.75em;
+    color: #757575; }
+
+.menu2 {
+  width: 750px;
+  background: #eee;
+  margin-top: 30px; }

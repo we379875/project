@@ -1,0 +1,55 @@
+body {
+  background: #f6f6f6; }
+
+.errorPage {
+  height: 100vh;
+  color: #545454; }
+  .errorPage h1 {
+    font-size: 15em;
+    font-weight: 600;
+    margin: 0; }
+  .errorPage p {
+    margin: 0; }
+  .errorPage .subtitle {
+    font-size: 3em;
+    font-weight: 600; }
+  .errorPage .artical {
+    font-size: 2em;
+    font-weight: 200;
+    margin-bottom: 80px; }
+  .errorPage .btn {
+    background: #545454;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .15em;
+    padding: 10px 20px;
+    margin-right: 30px; }
+  .errorPage input {
+    border: 2px solid #545454;
+    padding: 10px;
+    width: 250px;
+    background: none;
+    display: inline-block; }
+  .errorPage .searchicon {
+    color: #545454;
+    position: relative;
+    right: 30px; }
+  @media (max-width: 767.9px) {
+    .errorPage h1 {
+      font-size: 10em; }
+    .errorPage .subtitle {
+      font-size: 2em; }
+    .errorPage .artical {
+      font-size: 1.5em; }
+    .errorPage .btn {
+      width: 90%;
+      padding: 10px 0px;
+      margin: 0 auto; }
+    .errorPage input {
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 90%; }
+    .errorPage .searchicon {
+      top: -35px;
+      left: 40%; } }
