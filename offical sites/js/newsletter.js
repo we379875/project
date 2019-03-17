@@ -1,16 +1,16 @@
 $(document).ready(function () {
-    $('.newsletter').show(1000);
-    $('.Overlay').show(1000);
+    $('.newsletter').show();
+    $('.Overlay').show();
     $('.cancel').click(function (e) { 
         e.preventDefault();
-        $('.Overlay').hide(1000);
-        $('.newsletter').hide(1000);
+        $('.Overlay').hide();
+        $('.newsletter').hide();
     });
 
     $('body').on('click','.Overlay',function(e){
         e.preventDefault();
         $('.newsletter').hide();
         $(".Overlay").hide();
-        $('.menu1').hide(1000);
+        $('.menu1').hide();
     })
 });

@@ -1,4 +1,6 @@
+@import 'menu';
 @import 'shoppingCartCss';
+@import 'search';
 .banner {
     h2 {
         color: #494949;
@@ -485,6 +487,7 @@ nav {
         .terms {
             margin: 30px 50px;
             @media (max-width: 575.98px){
+                margin: 30px 10px;
                 label{
                     font-size: 0.85em;
                 }

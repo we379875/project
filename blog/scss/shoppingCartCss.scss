@@ -1,0 +1,54 @@
+.shoppingCart{
+    opacity: 1!important;
+    display: none;
+    position: absolute;
+    top: 72.8px;
+    right: 0;
+    z-index: 100;
+    width: 350px;
+    padding: 20px;
+    background: #fff;
+    color: #878787;
+    font-weight: 600;
+    p{
+        margin: 0;
+        font-size: 0.85em;
+    }
+    .price{
+        color: #000;
+    }
+    .delete{
+        color: red;
+        font-weight: 800;
+    }
+    .delete:hover{
+        cursor: pointer;
+    }
+    .btn{
+        padding: 5px 30px;
+        border-radius: 20px
+    }
+    .btn:hover{
+        color: #fff!important;
+    }
+    .btn-dark{
+        color: #fff!important;
+    }
+    @media(max-width: 350px){
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.5;
+    display: none;
+  }

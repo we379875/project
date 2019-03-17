@@ -1,16 +1,15 @@
 $(document).ready(function () {
-    $('.cart').click(function (e) { 
+    $('.product').click(function (e) { 
         e.preventDefault();
-        $('.shoppingCart').toggle();
-        $(".Overlay").toggle();
-        event.stopPropagation(); 
 
-        
+        $('.menu1').show();
+        $('.Overlay').show();
     });
 
     $('body').on('click','.Overlay',function(e){
         e.preventDefault();
-        $('.shoppingCart').hide();
+
         $(".Overlay").hide();
+        $('.menu1').hide();
     })
 });
