@@ -13,4 +13,10 @@ $(document).ready(function () {
         $('.shoppingCart').hide();
         $(".Overlay").hide();
     })
+
+    $('body').on('click','.delete', function (e) {
+        e.preventDefault();
+        
+        this.closest('.cartItem').remove();
+    });
 });

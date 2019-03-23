@@ -33,7 +33,7 @@
             </div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="shoppingCart">
-                    <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center cartItem">
                         <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                         <div>
                             <p>Marvelous Modern 3 Seater</p>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="delete ml-3">x</div>
                     </div>
-                    <div class="d-flex align-items-center mt-3">
+                    <div class="d-flex align-items-center mt-3 cartItem">
                         <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                         <div>
                             <p>Marvelous Modern 3 Seater</p>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="delete ml-3">x</div>
                     </div>
-                    <div class="d-flex align-items-center mt-3">
+                    <div class="d-flex align-items-center mt-3 cartItem">
                         <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                         <div>
                             <p>Marvelous Modern 3 Seater</p>
@@ -68,11 +68,13 @@
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
-                        <a href="shoppingCart.html" class="btn btn-outline-dark" role="button">VIEW CART</a>
-                        <a href="checkout.html" class="btn btn-dark" role="button">CHECKOUT</a>
+                        <a href="../shopping cart/shoppingCart.html" class="btn btn-outline-dark" role="button">VIEW
+                            CART</a>
+                        <a href="../shopping cart/checkout.html" class="btn btn-dark" role="button">CHECKOUT</a>
                     </div>
                 </div>
-                <a class="navbar-brand" href="#">
+
+                <a class="navbar-brand" href="../offical sites/index.html">
                     <img src="img/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -82,7 +84,8 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav ml-auto mr-">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="../offical sites/index.html">HOME <span
+                                    class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link dropdown product" href="#">PRODUCTS<i
@@ -150,18 +153,17 @@
                             <a class="nav-link" href="#">PAGES<i class="fas fa-angle-down ml-2"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="../offical sites/about.html">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
+                            <a class="nav-link" href="../blog/blog-postlist-sidebar.html">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="../offical sites/contact.html">CONTACT</a>
                         </li>
 
                         <li class="nav-item d-flex">
-                            <a class="nav-link search" data-toggle="collapse" data-target="#navbarText"
-                                aria-controls="navbarText" href="#"><i class="fas fa-search"></i></a>
+                            <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
@@ -224,7 +226,7 @@
                 <ul class="list-group list-group-flush shoppingList">
                     <li class="list-group-item listTitle">
                         <div class="d-flex">
-                            <div class="product">PRODUCT</div>
+                            <div class="products">PRODUCT</div>
                             <div class="d-flex">
                                 <div class="shoppingItem">PRICE</div>
                                 <div class="shoppingItem">QUANTITY</div>
@@ -232,9 +234,55 @@
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item listItem">
+                    <li class="list-group-item listItem cartItem">
                         <div class="d-flex align-items-center">
-                            <div class="product d-flex">
+                            <div class="d-flex">
+                                <div class="mr-sm-5 mr-3"><img src="https://fakeimg.pl/100x100/f8f8f8/" alt=""></div>
+                            </div>
+                            <div class="d-block d-lg-flex">
+                                <div class="productName">Marvelous Modern 3 Seater</div>
+                                <div class="shoppingItem price d-lg-block d-none"><i class="fas fa-euro-sign"></i>599,00
+                                </div>
+                                <div class="shoppingItem d-block mt-1 mt-lg-0">
+                                    <select name="" id="" class="number">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="shoppingItem price d-block mt-1 mt-lg-0"><i
+                                        class="fas fa-euro-sign"></i>599,00</div>
+                            </div>
+                            <a href="#" class="delete">x</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item listItem cartItem">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex">
+                                <div class="mr-sm-5 mr-3"><img src="https://fakeimg.pl/100x100/f8f8f8/" alt=""></div>
+                            </div>
+                            <div class="d-block d-lg-flex">
+                                <div class="productName">Marvelous Modern 3 Seater</div>
+                                <div class="shoppingItem price d-lg-block d-none"><i class="fas fa-euro-sign"></i>599,00
+                                </div>
+                                <div class="shoppingItem d-block mt-1 mt-lg-0">
+                                    <select name="" id="" class="number">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="shoppingItem price d-block mt-1 mt-lg-0"><i
+                                        class="fas fa-euro-sign"></i>599,00</div>
+                            </div>
+                            <a href="#" class="delete">x</a>
+                        </div>
+                    </li>
+                    <li class="list-group-item listItem cartItem">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex">
                                 <div class="mr-sm-5 mr-3"><img src="https://fakeimg.pl/100x100/f8f8f8/" alt=""></div>
                             </div>
                             <div class="d-block d-lg-flex">
@@ -256,54 +304,8 @@
                         </div>
                     </li>
                     <li class="list-group-item listItem">
-                        <div class="d-flex align-items-center">
-                            <div class="product d-flex">
-                                <div class="mr-sm-5 mr-3"><img src="https://fakeimg.pl/100x100/f8f8f8/" alt=""></div>
-                            </div>
-                            <div class="d-block d-lg-flex">
-                                <div class="productName">Marvelous Modern 3 Seater</div>
-                                <div class="shoppingItem price d-lg-block d-none"><i class="fas fa-euro-sign"></i>599,00
-                                </div>
-                                <div class="shoppingItem d-block mt-1 mt-lg-0">
-                                    <select name="" id="" class="number">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-                                <div class="shoppingItem price d-block mt-1 mt-lg-0"><i
-                                        class="fas fa-euro-sign"></i>599,00</div>
-                            </div>
-                            <a href="#" class="delete">x</a>
-                        </div>
-                    </li>
-                    <li class="list-group-item listItem">
-                        <div class="d-flex align-items-center">
-                            <div class="product d-flex">
-                                <div class="mr-sm-5 mr-3"><img src="https://fakeimg.pl/100x100/f8f8f8/" alt=""></div>
-                            </div>
-                            <div class="d-block d-lg-flex">
-                                <div class="productName">Marvelous Modern 3 Seater</div>
-                                <div class="shoppingItem price d-lg-block d-none"><i class="fas fa-euro-sign"></i>599,00
-                                </div>
-                                <div class="shoppingItem d-block mt-1 mt-lg-0">
-                                    <select name="" id="" class="number">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                    </select>
-                                </div>
-                                <div class="shoppingItem price d-block mt-1 mt-lg-0"><i
-                                        class="fas fa-euro-sign"></i>599,00</div>
-                            </div>
-                            <a href="#" class="delete">x</a>
-                        </div>
-                    </li>
-                    <li class="list-group-item listItem">
-                        <div class="d-flex align-items-center">
-                            <div class="product d-flex">
+                        <div class="d-flex align-items-center cartItem">
+                            <div class="d-flex">
                                 <div class="mr-sm-5 mr-3"><img src="https://fakeimg.pl/100x100/f8f8f8/" alt=""></div>
                             </div>
                             <div class="d-block d-lg-flex">
@@ -368,9 +370,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="text-right"><a type="button" class="btn btn-success mt-3" href="checkout.html">PROCEED TO CHECKOUT <i
-                                class="fas fa-check"></i></a></div>
-                        
+                        <div class="text-right"><a type="button" class="btn btn-success mt-3"
+                                href="checkout.html">PROCEED TO CHECKOUT <i class="fas fa-check"></i></a></div>
+
                     </div>
                 </div>
             </section>
@@ -510,10 +512,7 @@
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
-    <script src="js/all.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/all.js"></script>
 
 </body>
 

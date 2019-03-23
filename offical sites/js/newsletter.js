@@ -1,16 +1,15 @@
 $(document).ready(function () {
-    $('.newsletter').show();
+    $('.newsletter').slideDown();
     $('.Overlay').show();
     $('.cancel').click(function (e) { 
         e.preventDefault();
         $('.Overlay').hide();
-        $('.newsletter').hide();
+        $('.newsletter').slideUp();
     });
 
     $('body').on('click','.Overlay',function(e){
         e.preventDefault();
-        $('.newsletter').hide();
+        $('.newsletter').slideUp();
         $(".Overlay").hide();
-        $('.menu1').hide();
     })
 });

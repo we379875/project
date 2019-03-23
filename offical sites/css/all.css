@@ -74,6 +74,13 @@
   opacity: 0.5;
   display: none; }
 
+button:focus {
+  outline: none; }
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
 #header .header {
   background: #282828; }
   #header .header a {
@@ -328,48 +335,61 @@
       #content section:nth-child(1) .CHAIR-WITH-ARMRESTS .prize .money {
         font-size: 1.5em; } }
 
-#content section:nth-child(1) .dining-chairs, #content section:nth-child(1) .floor-lamp {
+#content section:nth-child(1) .dining-chairs,
+#content section:nth-child(1) .floor-lamp {
   top: 15%;
   right: 10%;
   color: #fff; }
-  #content section:nth-child(1) .dining-chairs .title, #content section:nth-child(1) .floor-lamp .title {
+  #content section:nth-child(1) .dining-chairs .title,
+  #content section:nth-child(1) .floor-lamp .title {
     font-size: .75em;
     letter-spacing: 4px;
     margin-bottom: 0;
     font-weight: 600; }
-  #content section:nth-child(1) .dining-chairs h3, #content section:nth-child(1) .floor-lamp h3 {
+  #content section:nth-child(1) .dining-chairs h3,
+  #content section:nth-child(1) .floor-lamp h3 {
     font-size: 1.25em;
     letter-spacing: 2px;
     padding-bottom: 40px;
     font-weight: 800; }
-  #content section:nth-child(1) .dining-chairs a, #content section:nth-child(1) .floor-lamp a {
+  #content section:nth-child(1) .dining-chairs a,
+  #content section:nth-child(1) .floor-lamp a {
     color: #fff;
     font-weight: 500;
     font-size: 0.75em; }
-  #content section:nth-child(1) .dining-chairs .fa-chevron-right, #content section:nth-child(1) .floor-lamp .fa-chevron-right {
+  #content section:nth-child(1) .dining-chairs .fa-chevron-right,
+  #content section:nth-child(1) .floor-lamp .fa-chevron-right {
     background: #b1de89;
     color: #fff;
     border: 1px solid #fff; }
   @media (max-width: 991.98px) {
-    #content section:nth-child(1) .dining-chairs, #content section:nth-child(1) .floor-lamp {
+    #content section:nth-child(1) .dining-chairs,
+    #content section:nth-child(1) .floor-lamp {
       width: 100%;
       top: 5%; }
-      #content section:nth-child(1) .dining-chairs .title, #content section:nth-child(1) .floor-lamp .title {
+      #content section:nth-child(1) .dining-chairs .title,
+      #content section:nth-child(1) .floor-lamp .title {
         font-size: 1.75em; }
-      #content section:nth-child(1) .dining-chairs h3, #content section:nth-child(1) .floor-lamp h3 {
+      #content section:nth-child(1) .dining-chairs h3,
+      #content section:nth-child(1) .floor-lamp h3 {
         font-size: 3em;
         padding-bottom: 25%; }
-      #content section:nth-child(1) .dining-chairs a, #content section:nth-child(1) .floor-lamp a {
+      #content section:nth-child(1) .dining-chairs a,
+      #content section:nth-child(1) .floor-lamp a {
         font-size: 1.5em; } }
   @media (max-width: 767.98px) {
-    #content section:nth-child(1) .dining-chairs, #content section:nth-child(1) .floor-lamp {
+    #content section:nth-child(1) .dining-chairs,
+    #content section:nth-child(1) .floor-lamp {
       top: 10px; }
-      #content section:nth-child(1) .dining-chairs .title, #content section:nth-child(1) .floor-lamp .title {
+      #content section:nth-child(1) .dining-chairs .title,
+      #content section:nth-child(1) .floor-lamp .title {
         font-size: 1em; }
-      #content section:nth-child(1) .dining-chairs h3, #content section:nth-child(1) .floor-lamp h3 {
+      #content section:nth-child(1) .dining-chairs h3,
+      #content section:nth-child(1) .floor-lamp h3 {
         font-size: 1.25em;
         padding-bottom: 20%; }
-      #content section:nth-child(1) .dining-chairs a, #content section:nth-child(1) .floor-lamp a {
+      #content section:nth-child(1) .dining-chairs a,
+      #content section:nth-child(1) .floor-lamp a {
         font-size: 1em; } }
 
 #content section:nth-child(1) .floor-lamp {
@@ -631,6 +651,12 @@
     border-radius: 20px;
     color: #aaa; }
 
+#content section:nth-child(3) a {
+  color: #000; }
+
+#content section:nth-child(3) a:hover {
+  text-decoration: none; }
+
 #content section:nth-child(4) h2 {
   color: #3a3a3a; }
   #content section:nth-child(4) h2 small {
@@ -638,16 +664,27 @@
     font-size: 0.5em;
     letter-spacing: 2px; }
 
-#content section:nth-child(4) .owl-nav {
+#content section:nth-child(4) .brand .owl-nav {
   position: absolute;
   width: 100%;
   top: 0;
+  -webkit-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  transform: translate(0, 50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  #content section:nth-child(4) .brand .owl-nav .owl-prev {
+    position: relative;
+    left: -1em; }
+  #content section:nth-child(4) .brand .owl-nav .owl-next {
+    position: relative;
+    right: -1em; }
+  #content section:nth-child(4) .brand .owl-nav .owl-prev:focus, #content section:nth-child(4) .brand .owl-nav .owl-next:focus {
+    outline: none; }
 
 #content .banner {
   background: #f4f4f4; }
@@ -697,6 +734,38 @@
 
 #content .about section:nth-child(2) small {
   letter-spacing: 1px; }
+
+#content .about .workspace {
+  position: relative; }
+  #content .about .workspace .owl-dots {
+    display: none; }
+  #content .about .workspace .owl-nav {
+    position: absolute;
+    top: 0px;
+    margin-top: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    display: block;
+    width: 100%; }
+    #content .about .workspace .owl-nav .owl-prev {
+      display: block;
+      position: absolute;
+      left: 0; }
+    #content .about .workspace .owl-nav .owl-next {
+      position: absolute;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5); }
+    #content .about .workspace .owl-nav .owl-prev, #content .about .workspace .owl-nav .owl-next {
+      z-index: 10;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      width: 180px;
+      height: 310px;
+      margin: 0; }
+    @media (max-width: 1025px) {
+      #content .about .workspace .owl-nav {
+        display: none; } }
 
 #footer section:nth-child(1) {
   background: #f6f6f6; }

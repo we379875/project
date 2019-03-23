@@ -220,6 +220,19 @@
             font-size: 0.9em;
             line-height: 2em;
         }
+        @media (max-width: 576px) {
+            h3{
+                font-size: 1.25em;
+                text-align: center;
+            }
+            small{
+                font-size: 0.75em;
+            }
+            .d-flex{
+                justify-content: center;
+            }
+        }
+
     }
     .author {
         background: #f4f4f4;

@@ -25,7 +25,7 @@
     <div id="header">
         <nav class="navbar navbar-expand-lg navbar-light mx-sm-5 mx-3">
             <div class="shoppingCart">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center cartItem">
                     <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                     <div>
                         <p>Marvelous Modern 3 Seater</p>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="delete ml-3">x</div>
                 </div>
-                <div class="d-flex align-items-center mt-3">
+                <div class="d-flex align-items-center mt-3 cartItem">
                     <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                     <div>
                         <p>Marvelous Modern 3 Seater</p>
@@ -43,7 +43,7 @@
                     </div>
                     <div class="delete ml-3">x</div>
                 </div>
-                <div class="d-flex align-items-center mt-3">
+                <div class="d-flex align-items-center mt-3 cartItem">
                     <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                     <div>
                         <p>Marvelous Modern 3 Seater</p>
@@ -152,7 +152,7 @@
                     </li>
 
                     <li class="nav-item mr-0">
-                            <a class="nav-link search" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"   href="#"><i class="fas fa-search"></i></a>
+                        <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
                     </li>
                     <li class="nav-item mr-0">
                         <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
@@ -258,44 +258,28 @@
 
             <div class="container-fluid">
                 <section class="py-5">
-                    <h3 class="mb-4">OUR WORKSPACE</h3>
+                    <div class="container"><h3 class="mb-4">OUR WORKSPACE</h3></div>
+                    
 
                     <div class="owl-carousel owl-theme workspace">
-
-                        <div class="item" data-merge="2"><img src="https://fakeimg.pl/480x528/" alt=""></div>
-                        <div class="item" data-merge="3">
+                        <div class="item"><img src="https://fakeimg.pl/480x400/" alt=""></div>
+                        <div class="item">
                             <div>
                                 <div class="row">
                                     <div class="col-5"><img src="https://fakeimg.pl/282x300/" alt=""></div>
                                     <div class="col-7 pl-0"><img src="https://fakeimg.pl/422x300/" alt=""></div>
                                 </div>
-                                <div><img src="https://fakeimg.pl/719x220/" alt="" class="mt-2"></div>
+                                <div><img src="https://fakeimg.pl/719x280/" alt="" class="mt-2"></div>
                             </div>
                         </div>
-
-
-                        <div class="item" data-merge="2"><img src="https://fakeimg.pl/480x528/" alt=""></div>
-                        <div class="item" data-merge="3">
+                        <div class="item"><img src="https://fakeimg.pl/480x400/" alt=""></div>
+                        <div class="item">
                             <div>
-                                <div class="row">
-                                    <div class="col-5"><img src="https://fakeimg.pl/282x300/" alt=""></div>
-                                    <div class="col-7 pl-0"><img src="https://fakeimg.pl/422x300/" alt=""></div>
-                                </div>
+                                <div><img src="https://fakeimg.pl/282x150/" alt=""></div>
                                 <div><img src="https://fakeimg.pl/719x220/" alt="" class="mt-2"></div>
                             </div>
                         </div>
-
-
-                        <div class="item" data-merge="2"><img src="https://fakeimg.pl/480x528/" alt=""></div>
-                        <div class="item" data-merge="3">
-                            <div>
-                                <div class="row">
-                                    <div class="col-5"><img src="https://fakeimg.pl/282x300/" alt=""></div>
-                                    <div class="col-7 pl-0"><img src="https://fakeimg.pl/422x300/" alt=""></div>
-                                </div>
-                                <div><img src="https://fakeimg.pl/719x220/" alt="" class="mt-2"></div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </section>
             </div>
@@ -436,9 +420,7 @@
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/all.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/all.js"></script>
 
 </body>
 

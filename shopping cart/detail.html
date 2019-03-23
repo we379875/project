@@ -23,7 +23,7 @@
     <div id="header" style="background: #fff;">
         <nav class="navbar navbar-expand-lg navbar-light mx-5">
             <div class="shoppingCart">
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center cartItem">
                     <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                     <div>
                         <p>Marvelous Modern 3 Seater</p>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="delete ml-3">x</div>
                 </div>
-                <div class="d-flex align-items-center mt-3">
+                <div class="d-flex align-items-center mt-3 cartItem">
                     <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                     <div>
                         <p>Marvelous Modern 3 Seater</p>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="delete ml-3">x</div>
                 </div>
-                <div class="d-flex align-items-center mt-3">
+                <div class="d-flex align-items-center mt-3 cartItem">
                     <div class="mr-2"><img src="https://fakeimg.pl/74x74/f8f8f8/" alt=""></div>
                     <div>
                         <p>Marvelous Modern 3 Seater</p>
@@ -58,8 +58,9 @@
                 </div>
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <a href="shoppingCart.html" class="btn btn-outline-dark" role="button">VIEW CART</a>
-                    <a href="checkout.html" class="btn btn-dark" role="button">CHECKOUT</a>
+                    <a href="../shopping cart/shoppingCart.html" class="btn btn-outline-dark" role="button">VIEW
+                        CART</a>
+                    <a href="../shopping cart/checkout.html" class="btn btn-dark" role="button">CHECKOUT</a>
                 </div>
             </div>
 
@@ -152,8 +153,7 @@
                     </li>
 
                     <li class="nav-item d-flex">
-                        <a class="nav-link search" data-toggle="collapse" data-target="#navbarText"
-                            aria-controls="navbarText" href="#"><i class="fas fa-search"></i></a>
+                        <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
                         <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
                         <a class="nav-link cart" href="#"><i class="fas fa-shopping-bag"></i></a>
                     </li>
@@ -181,32 +181,91 @@
                             <p class="pr-2"><i class="fas fa-comments"></i> 12</p>
                             <p><i class="fas fa-share-alt"></i> 14</p>
                         </div>
+
                         <div class="img mx-auto">
-                            <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
+                            <div class="wrapCarouselFull">
+                                <div class="owl-carousel carousel-full">
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/ffffff/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/ccc/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/eee/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/3c3c3c/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/444/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/aaa/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/121354/">
+                                    </div>
+                                    <div class="item-carousel-full">
+                                        <img src="https://fakeimg.pl/510x450/a31222/">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wrapCarouselThumbs mt-3">
+                                <div class="owl-carousel carousel-thumbs">
+                                    <div class="item-carousel-thumbs">
+                                        <img class="abc" src="https://fakeimg.pl/510x450/ffffff/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/ccc/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/eee/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/3c3c3c/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/444/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/aaa/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/121354/" alt="">
+                                    </div>
+                                    <div class="item-carousel-thumbs">
+                                        <img src="https://fakeimg.pl/510x450/a31222/" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div><img class="mainPhoto w-100" src="https://fakeimg.pl/510x450/ffffff/" alt=""></div>
 
                             <div class="owl-carousel owl-theme mt-3">
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
                                 </div>
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/ccc/" alt="" class="w-100"></div>
                                 </div>
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/eee/" alt="" class="w-100"></div>
                                 </div>
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
                                 </div>
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
                                 </div>
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
                                 </div>
                                 <div class="item">
-                                    <div><img src="https://fakeimg.pl/105x105/ffffff/" alt="" class="w-100"></div>
+                                    <div><img src="https://fakeimg.pl/510x450/ffffff/" alt="" class="w-100"></div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                     </div>
@@ -265,38 +324,58 @@
         </div>
 
         <div class="container">
-            <div class="describe">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">DESCRIPTION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">INFORMATION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">REVIEWS (12)</a>
-                    </li>
-                </ul>
-
-                <div class="my-5">
-                    <p>
-                        Koila is a chair designed for restaurants and food lovers in general. Designed in collaboration
-                        with
-                        restaurant professionals, it ensures comfort and an <br>
-                        ideal posture, as there are armrests on both sides of the chair.
-                    </p>
-                    <p>
-                        Koila is a seat designed for restaurants and gastronomic places in general. Designed in
-                        collaboration with professional of restaurants and hotels field,<br>
-                        this armchair is composed of a curved shell with a base in oak who has pinched the back
-                        upholstered in fabric or leather. It
-                        provides comfort and holds <br>
-                        for ideal sitting position,the arms may rest on the sides of the armchair. <br>
-                        Solid oak construction. <br>
-                        Back in plywood (2 faces oak veneer) or upholstered in fabric, leather or eco-leather. <br>
-                        Seat upholstered in fabric, leather or eco-leather. <br>
-                        H 830 x L 585 x P 540 mm.
-                    </p>
+            <div class="panel">
+                <nav>
+                    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                            role="tab" aria-controls="nav-home" aria-selected="true">DESCRIPTION</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                            role="tab" aria-controls="nav-profile" aria-selected="false">INFORMATION</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                            role="tab" aria-controls="nav-contact" aria-selected="false">REVIEWS (12)</a>
+                    </div>
+                </nav>
+                <div class="tab-content py-5" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <p>
+                            Koila is a chair designed for restaurants and food lovers in general. Designed in
+                            collaboration
+                            with
+                            restaurant professionals, it ensures comfort and an <br>
+                            ideal posture, as there are armrests on both sides of the chair.
+                        </p>
+                        <p>
+                            Koila is a seat designed for restaurants and gastronomic places in general. Designed in
+                            collaboration with professional of restaurants and hotels field,<br>
+                            this armchair is composed of a curved shell with a base in oak who has pinched the back
+                            upholstered in fabric or leather. It
+                            provides comfort and holds <br>
+                            for ideal sitting position,the arms may rest on the sides of the armchair. <br>
+                            Solid oak construction. <br>
+                            Back in plywood (2 faces oak veneer) or upholstered in fabric, leather or eco-leather. <br>
+                            Seat upholstered in fabric, leather or eco-leather. <br>
+                            H 830 x L 585 x P 540 mm.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae fugiat possimus natus
+                            repellendus quis repellat, magnam voluptas! Eveniet quasi, pariatur minima tempore optio
+                            neque sint vel debitis. Delectus, illo facere.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt possimus
+                            dolorem necessitatibus officiis fuga quam pariatur amet molestias eius! Libero cupiditate,
+                            quo ab tempora reprehenderit alias nostrum consequuntur id illum? Odio maxime eaque
+                            dignissimos quam sapiente! Temporibus obcaecati, laborum distinctio consectetur dolor id
+                            rem, quibusdam, animi exercitationem assumenda excepturi.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, ipsa?
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -304,29 +383,39 @@
                 <h3>RELATED PRODUCTS</h3>
                 <div class="row">
                     <div class="col-lg">
-                        <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
-                        <p>Puff Chairs</p>
-                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        <a href="detail.html">
+                            <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
+                            <p>Puff Chairs</p>
+                            <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        </a>
                     </div>
                     <div class="col-lg">
-                        <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
-                        <p>Puff Chairs</p>
-                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        <a href="detail.html">
+                            <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
+                            <p>Puff Chairs</p>
+                            <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        </a>
                     </div>
                     <div class="col-lg">
-                        <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
-                        <p>Puff Chairs</p>
-                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        <a href="detail.html">
+                            <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
+                            <p>Puff Chairs</p>
+                            <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        </a>
                     </div>
                     <div class="col-lg">
-                        <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
-                        <p>Puff Chairs</p>
-                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        <a href="detail.html">
+                            <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
+                            <p>Puff Chairs</p>
+                            <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        </a>
                     </div>
                     <div class="col-lg">
-                        <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
-                        <p>Puff Chairs</p>
-                        <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        <a href="detail.html">
+                            <img src="https://fakeimg.pl/213x213/" alt="" class="w-100">
+                            <p>Puff Chairs</p>
+                            <p><i class="fas fa-euro-sign"></i> 287,00</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -466,9 +555,8 @@
         crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/all.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="js/owl.carousel-thumbs.js"></script>
 </body>
 
 </html>

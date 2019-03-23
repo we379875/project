@@ -305,6 +305,16 @@
       #content .content p small i {
         padding-right: .5em;
         font-style: normal; }
+  @media (max-width: 576px) {
+    #content .content h3 {
+      font-size: 1.25em;
+      text-align: center; }
+    #content .content small {
+      font-size: 0.75em; }
+    #content .content .d-flex {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 #content .author {
   background: #f4f4f4; }

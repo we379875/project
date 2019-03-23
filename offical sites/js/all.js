@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.workspace').owlCarousel({
+        center:false,
         loop:true,
         margin:10,
         responsiveClass:true,
@@ -7,18 +8,20 @@ $(document).ready(function(){
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav:false
             },
             600:{
                 items:3,
                 nav:false,
                 mergeFit:true
             },
-            1000:{
-                items:6,
-                nav:true,
-                loop:false,
-                mergeFit:false
+            1025:{
+                items:4,
+                nav:false,
+                center:true,
+                loop:true,
+                autoWidth:false,
+                mergeFit:true
             }
         }
     })
@@ -49,7 +52,7 @@ $(document).ready(function(){
 
     $('.brand').owlCarousel({
         loop:true,
-        margin:10,
+        margin:50,
         responsiveClass:true,
         merge:true,
         responsive:{
@@ -63,9 +66,9 @@ $(document).ready(function(){
                 mergeFit:true
             },
             1000:{
-                items:5,
+                items:6,
                 nav:true,
-                loop:false,
+                loop:true,
                 mergeFit:false
             }
         }
@@ -83,13 +86,13 @@ $(document).ready(function(){
             },
             600:{
                 items:3,
-                nav:false,
+                nav:true,
                 mergeFit:true
             },
             1000:{
                 items:5,
                 nav:true,
-                loop:false,
+                loop:true,
                 mergeFit:false
             }
         }

@@ -2,18 +2,19 @@ $(document).ready(function () {
     $('.search').click(function (e) { 
         e.preventDefault();
         
-        $('.searchPage').show();
-        $('#footer').hide();
-        $('#content').hide();
-
+        $('.searchPage').slideDown();
+        $('.navbar-collapse').removeClass("show");
+        // $('#footer').hide();
+        // $('#content').hide();
+        $('.Overlay').show();
     });
 
     $(".searchPage").on("click",".cancel", function(e){
         e.preventDefault();
 
-        $('.searchPage').hide();
-        $('#content').show();
-        $('#footer').show();
+        $('.searchPage').slideUp();
+        // $('#content').show();
+        // $('#footer').show();
       });
 
 });

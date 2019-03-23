@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.product').click(function (e) { 
         e.preventDefault();
 
-        $('.menu1').show();
+        $('.menu1').slideDown();
         $('.Overlay').show();
     });
 
@@ -10,6 +10,7 @@ $(document).ready(function () {
         e.preventDefault();
 
         $(".Overlay").hide();
-        $('.menu1').hide();
+        $('.menu1').slideUp();
+        $('.searchPage').slideUp();
     })
 });
