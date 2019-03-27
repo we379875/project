@@ -18,11 +18,15 @@ $(document).ready(function () {
         
         $('.searchPage').slideDown();
         $('.navbar-collapse').removeClass("show");
-        // $('#footer').hide();
-        // $('#content').hide();
         $('.Overlay').show();
     });
 
+    $(".searchPage").on("click",".cancel", function(e){
+        e.preventDefault();
+
+        $('.searchPage').slideUp();
+        $(".Overlay").hide();
+      });
 
 
     $('body').on('click','.Overlay',function(e){
@@ -30,7 +34,6 @@ $(document).ready(function () {
         $('.shoppingCart').slideUp();
         $(".Overlay").hide();
         $('.menu1').slideUp();
-        $('.searchPage').slideUp();
         $('.searchPage').slideUp();
     })
 

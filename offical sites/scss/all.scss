@@ -818,7 +818,7 @@ button:focus{
             }
             .owl-nav{
                 position: absolute;
-                top: 0px;
+                top: 50%;
                 margin-top: 0;
                 transform: translate(0,-50%);
                 display: block;
@@ -826,21 +826,21 @@ button:focus{
                 .owl-prev{
                     display: block;
                     position: absolute;
-                    left: 0;
+                    left: 5%;
                     
                 }
                 .owl-next{
                     position: absolute;
-                    right: 0;
-                    background: rgba(0,0,0,0.5);
+                    right: 5%;
                 }
                 .owl-prev,.owl-next{
                     z-index: 10;
+                    width: 50px;
                     color: #fff;
-                    background: rgba(0,0,0,0.5);
-                    width: 180px;
-                    height: 310px;
                     margin: 0;
+                }
+                .owl-prev:hover,.owl-next:hover{
+                    background: none;
                 }
                 @media (max-width: 1025px) {
                     display: none;

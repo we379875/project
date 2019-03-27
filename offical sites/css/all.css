@@ -741,7 +741,7 @@ button:focus {
     display: none; }
   #content .about .workspace .owl-nav {
     position: absolute;
-    top: 0px;
+    top: 50%;
     margin-top: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -751,18 +751,17 @@ button:focus {
     #content .about .workspace .owl-nav .owl-prev {
       display: block;
       position: absolute;
-      left: 0; }
+      left: 5%; }
     #content .about .workspace .owl-nav .owl-next {
       position: absolute;
-      right: 0;
-      background: rgba(0, 0, 0, 0.5); }
+      right: 5%; }
     #content .about .workspace .owl-nav .owl-prev, #content .about .workspace .owl-nav .owl-next {
       z-index: 10;
+      width: 50px;
       color: #fff;
-      background: rgba(0, 0, 0, 0.5);
-      width: 180px;
-      height: 310px;
       margin: 0; }
+    #content .about .workspace .owl-nav .owl-prev:hover, #content .about .workspace .owl-nav .owl-next:hover {
+      background: none; }
     @media (max-width: 1025px) {
       #content .about .workspace .owl-nav {
         display: none; } }
