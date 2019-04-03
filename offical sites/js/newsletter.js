@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('.newsletter').slideUp();
     });
 
-    $('body').on('click','.Overlay',function(e){
+    $('body').on('click touchstart','.Overlay',function(e){
         e.preventDefault();
         $('.newsletter').slideUp();
         $(".Overlay").hide();
